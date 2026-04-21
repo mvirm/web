@@ -1,0 +1,104 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "OneInbox",
+      "subtitle": "Hub de Mensajería Omnicanal",
+      "background": "case01",
+      "images": ["oneInbox-1", "oneInbox-2", "oneInbox-3"],
+      "details": [
+        {
+          "title": "el *problema*",
+          "description": "Las consultas llegaban desde *múltiples plataformas* y no había una *forma clara de gestionarlas*, lo que generaba *pérdida de oportunidades de venta*."
+        },
+        {
+          "title": "la *solución*",
+          "description": "Desarrollé una *plataforma que centraliza todos los mensajes en un solo panel*, organizando contactos y facilitando la *respuesta en tiempo real*."
+        },
+        {
+          "title": "*impacto*",
+          "description": "Se logró una *gestión más ágil*, evitando mensajes sin responder y *mejorando la atención al cliente*."
+        }
+      ],
+      "highlights": [
+        "70% más ventas",
+        "Mejor gestión de consultas"
+      ]
+    },
+    {
+      "id": "project-2",
+      "title": "Laboratorios Del Río",
+      "subtitle": "Software de Gestión de Fórmulas",
+      "background": "case02",
+      "images": ["lab-1", "lab-2", "lab-3"],
+      "details": [
+        {
+          "title": "el *problema*",
+          "description": "Los *procesos* de formulación se gestionaban de forma *compleja*, con riesgo de *errores en la carga de datos*."
+        },
+        {
+          "title": "la *solución*",
+          "description": "Diseñé un *software que ordena y simplifica* la creación de fórmulas, con una *interfaz clara* que *facilita el trabajo* técnico."
+        },
+        {
+          "title": "*impacto*",
+          "description": "Se *redujeron errores operativos* y se logró un entorno de *trabajo* más *ordenado, preciso* y *profesional*."
+        }
+      ],
+      "highlights": [
+        "Mayor eficiencia en producción",
+        "Reducción de costos operativos"
+      ]
+    },
+    {
+      "id": "project-3",
+      "title": "Avignon",
+      "subtitle": "E-commerce de Indumentaria",
+      "background": "case03",
+      "images": ["avignon-1", "avignon-2", "avignon-3"],
+      "details": [
+        {
+          "title": "el *problema*",
+          "description": "La marca necesitaba una *tienda online que refleje su identidad* sin afectar la velocidad ni la experiencia de compra."
+        },
+        {
+          "title": "la *solución*",
+          "description": "Diseñé y desarrollé un *e-commerce personalizado*, priorizando una *navegación ágil* y una *estética alineada* a la marca."
+        },
+        {
+          "title": "*impacto*",
+          "description": "Se logró una *tienda online clara, rápida* y visualmente *atractiva*, mejorando la *experiencia de compra*."
+        }
+      ],
+      "highlights": [
+        "Experiencia de compra fluida",
+        "Coherencia con la identidad de marca"
+      ]
+    },
+    {
+      "id": "project-4",
+      "title": "iPunto",
+      "subtitle": "Sistema de Gestión de Inventarios",
+      "background": "case04",
+      "images": ["ipunto-1", "ipunto-2", "ipunto-3"],
+      "details": [
+        {
+          "title": "el *problema*",
+          "description": "La *gestión de stock* era *manual*, lo que generaba *errores* y *falta de previsión* en el inventario."
+        },
+        {
+          "title": "la *solución*",
+          "description": "Desarrollé un *sistema con alertas inteligentes* que *anticipan faltantes* y *validan* los *datos* ingresados."
+        },
+        {
+          "title": "*impacto*",
+          "description": "Se *redujeron errores* y se logró un *control* más *claro* y *predecible* del negocio."
+        }
+      ],
+      "highlights": [
+        "40% menos errores de carga",
+        "Control de stock más predecible"
+      ]
+    }
+  ]
+}

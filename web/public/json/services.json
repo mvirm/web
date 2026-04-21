@@ -1,0 +1,48 @@
+{
+  "services": [
+    {
+      "id": "service-1",
+      "title": "Tiendas online (e-commerce)",
+      "question": "¿Querés empezar a *vender online* o ya tenés una tienda que no está dando resultados?",
+      "image": "ecommerce",
+      "description": "Diseño y desarrollo tiendas online con *procesos de compra simples y claros*, pensados para que tus clientes puedan *comprar rápido* y *sin complicaciones*.",
+      "highlights": [
+        "Más ventas",
+        "Mejor experiencia y una tienda lista para crecer"
+      ]
+    },
+    {
+      "id": "service-2",
+      "title": "Desarrollo web a medida",
+      "question": "¿Necesitás una *web para mostrar lo que hacés* o sentís que la que tenés no lo representa bien?",
+      "image": "customWeb",
+      "description": "Creo *páginas web adaptadas a tu voz o tu negocio*: landings, webs institucionales o portfolios profesionales.",
+      "highlights": [
+        "Una presencia digital clara",
+        "Alineada a tus objetivos y pensada para generar impacto real"
+      ]
+    },
+    {
+      "id": "service-3",
+      "title": "Optimización de sitios existentes",
+      "question": "¿Tu web *no está funcionando como esperabas*? ¿Es *lenta, confusa* o no *genera resultados*?",
+      "image": "optimization",
+      "description": "Analizo qué está fallando y lo *optimizo* para mejorar su *rendimiento* y *usabilidad*.",
+      "highlights": [
+        "Mejor experiencia",
+        "Más claridad y mejores resultados"
+      ]
+    },
+    {
+      "id": "service-4",
+      "title": "Software a medida",
+      "question": "¿Estás resolviendo *procesos manualmente* o con *herramientas que no se adaptan a vos*?",
+      "image": "customSoftware",
+      "description": "Desarrollo *soluciones digitales personalizadas* para *ordenar, simplificar* y *automatizar tu trabajo*.",
+      "highlights": [
+        "Menos tareas repetitivas",
+        "Más claridad en tus procesos y herramientas que te simplifican el día a día"
+      ]
+    }
+  ]
+}

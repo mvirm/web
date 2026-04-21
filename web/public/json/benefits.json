@@ -1,0 +1,36 @@
+{
+  "benefits": [
+    {
+      "id": "benefit-1",
+      "title": "Entender",
+      "anchor": "antes de construir",
+      "description": "Comprendo *qué necesitás* y *qué objetivo tiene tu proyecto* antes de tomar cualquier decisión.",
+      "image": "understand",
+      "highlight": "Cada paso parte de una base clara."
+    },
+    {
+      "id": "benefit-2",
+      "title": "Comunicar",
+      "anchor": "de forma clara",
+      "description": "Durante todo el proceso vas a saber *qué estamos haciendo* y *por qué*.",
+      "image": "communication",
+      "highlight": "Podés tomar decisiones con seguridad."
+    },
+    {
+      "id": "benefit-3",
+      "title": "Diseñar",
+      "anchor": "soluciones a medida",
+      "description": "Cada proyecto se construye en base a *lo que necesitás, nada de soluciones genéricas*.",
+      "image": "customSolutions",
+      "highlight": "Todo tiene sentido dentro de tu proyecto."
+    },
+    {
+      "id": "benefit-4",
+      "title": "Construir",
+      "anchor": "con propósito",
+      "description": "El objetivo no es solo que *se vea bien*, sino que *cumpla su función*.",
+      "image": "purpose",
+      "highlight": "Tu web realmente hace lo que tiene que hacer."
+    }
+  ]
+}
