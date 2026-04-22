@@ -5,7 +5,7 @@
       "title": "Entender",
       "anchor": "antes de construir",
       "description": "Comprendo *qué necesitás* y *qué objetivo tiene tu proyecto* antes de tomar cualquier decisión.",
-      "image": "understand",
+      "image": "/images/benefits/understand.svg",
       "highlight": "Cada paso parte de una base clara."
     },
     {
@@ -13,7 +13,7 @@
       "title": "Comunicar",
       "anchor": "de forma clara",
       "description": "Durante todo el proceso vas a saber *qué estamos haciendo* y *por qué*.",
-      "image": "communication",
+      "image": "/images/benefits/communicate.svg",
       "highlight": "Podés tomar decisiones con seguridad."
     },
     {
@@ -21,7 +21,7 @@
       "title": "Diseñar",
       "anchor": "soluciones a medida",
       "description": "Cada proyecto se construye en base a *lo que necesitás, nada de soluciones genéricas*.",
-      "image": "customSolutions",
+      "image": "/images/benefits/design.svg",
       "highlight": "Todo tiene sentido dentro de tu proyecto."
     },
     {
@@ -29,7 +29,7 @@
       "title": "Construir",
       "anchor": "con propósito",
       "description": "El objetivo no es solo que *se vea bien*, sino que *cumpla su función*.",
-      "image": "purpose",
+      "image": "/images/benefits/build.svg",
       "highlight": "Tu web realmente hace lo que tiene que hacer."
     }
   ]

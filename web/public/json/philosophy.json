@@ -4,37 +4,37 @@
       "id": "philosophy-1",
       "title": "Entender antes de construir",
       "text": "No empiezo escribiendo código. Empiezo entendiendo *qué está pasando* y *qué necesitás resolver*.",
-      "background": "understand"
+      "background": "/background/icons/understand.svg"
     },
     {
       "id": "philosophy-2",
       "title": "Pensar en el producto",
       "text": "No desarrollo “páginas”. Trabajo sobre *soluciones* que tienen que cumplir un *objetivo*: *vender, organizar, escalar o mejorar* un proceso.",
-      "background": "product"
+      "background": "/background/icons/think.svg"
     },
     {
       "id": "philosophy-3",
       "title": "Diseñar con criterio",
       "text": "Mi formación en diseño me permite tomar *decisiones* que no son solo *estéticas*, sino *funcionales* y *estratégicas*.",
-      "background": "design"
+      "background": "/background/icons/design.svg"
     },
     {
       "id": "philosophy-4",
       "title": "Construir con lógica técnica sólida",
       "text": "Aplico *buenas prácticas* de arquitectura, rendimiento y calidad para que *el producto funcione bien hoy y a futuro*.",
-      "background": "development"
+      "background": "/background/icons/build.svg"
     },
     {
       "id": "philosophy-5",
       "title": "Cuidar cada detalle",
       "text": "Trabajo con mentalidad de *calidad*. Desde la estructura hasta la interacción, *todo* tiene que ser *claro, coherente* y *confiable*.",
-      "background": "detail"
+      "background": "/background/icons/care.svg"
     },
     {
       "id": "philosophy-6",
       "title": "Acompañar el proceso",
       "text": "No trabajo de forma aislada. El proyecto se construye *en conjunto*, con *instancias de validación* para que siempre sepas en qué punto estamos.",
-      "background": "support"
+      "background": "/background/icons/partner.svg"
     }
   ]
 }

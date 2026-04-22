@@ -4,8 +4,15 @@
       "id": "project-1",
       "title": "OneInbox",
       "subtitle": "Hub de Mensajería Omnicanal",
-      "background": "case01",
-      "images": ["oneInbox-1", "oneInbox-2", "oneInbox-3"],
+      "background": [
+        "/background/case/desktop/case01.svg",
+        "/background/case/mobile/case01.svg"
+      ],
+      "images": [
+        "/images/projects/oneinbox/oneinbox1.png",
+        "/images/projects/oneinbox/oneinbox2.png",
+        "/images/projects/oneinbox/oneinbox3.png"
+      ],
       "details": [
         {
           "title": "el *problema*",
@@ -20,17 +27,21 @@
           "description": "Se logró una *gestión más ágil*, evitando mensajes sin responder y *mejorando la atención al cliente*."
         }
       ],
-      "highlights": [
-        "70% más ventas",
-        "Mejor gestión de consultas"
-      ]
+      "highlights": ["70% más ventas", "Mejor gestión de consultas"]
     },
     {
       "id": "project-2",
       "title": "Laboratorios Del Río",
       "subtitle": "Software de Gestión de Fórmulas",
-      "background": "case02",
-      "images": ["lab-1", "lab-2", "lab-3"],
+      "background": [
+        "/background/case/desktop/case02.svg",
+        "/background/case/mobile/case02.svg"
+      ],
+      "images": [
+        "/images/projects/laboratorio/lab1.png",
+        "/images/projects/laboratorio/lab2.png",
+        "/images/projects/laboratorio/lab3.png"
+      ],
       "details": [
         {
           "title": "el *problema*",
@@ -54,8 +65,15 @@
       "id": "project-3",
       "title": "Avignon",
       "subtitle": "E-commerce de Indumentaria",
-      "background": "case03",
-      "images": ["avignon-1", "avignon-2", "avignon-3"],
+      "background": [
+        "/background/case/desktop/case03.svg",
+        "/background/case/mobile/case03.svg"
+      ],
+      "images": [
+        "/images/projects/avignon/avignon1.png",
+        "/images/projects/avignon/avignon2.png",
+        "/images/projects/avignon/avignon3.png"
+      ],
       "details": [
         {
           "title": "el *problema*",
@@ -79,8 +97,15 @@
       "id": "project-4",
       "title": "iPunto",
       "subtitle": "Sistema de Gestión de Inventarios",
-      "background": "case04",
-      "images": ["ipunto-1", "ipunto-2", "ipunto-3"],
+      "background": [
+        "/background/case/desktop/case04.svg",
+        "/background/case/mobile/case04.svg"
+      ],
+      "images": [
+        "/images/projects/ipunto/ipunto1.png",
+        "/images/projects/ipunto/ipunto2.png",
+        "/images/projects/ipunto/ipunto3.png"
+      ],
       "details": [
         {
           "title": "el *problema*",

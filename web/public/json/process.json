@@ -4,49 +4,49 @@
       "id": "step-1",
       "title": "Entender",
       "subtitle": "tu punto de partida",
-      "background": "step01",
+      "background": "/background/steps/step01.svg",
       "description": "Nos reunimos para *escuchar* tu situación, *detectar el problema* y *definir el objetivo*."
     },
     {
       "id": "step-2",
       "title": "Definir",
       "subtitle": "alcance y propuesta",
-      "background": "step02",
+      "background": "/background/steps/step02.svg",
       "description": "Armo una *propuesta clara* con distintas opciones según el nivel de desarrollo que necesites."
     },
     {
       "id": "step-3",
       "title": "Alinear",
       "subtitle": "antes de avanzar",
-      "background": "step03",
+      "background": "/background/steps/step03.svg",
       "description": "*Revisamos* juntos la propuesta y ajustamos los *detalles técnicos* y *estéticos* antes de comenzar."
     },
     {
       "id": "step-4",
       "title": "Diseñar",
       "subtitle": "la solución",
-      "background": "step04",
+      "background": "/background/steps/step04.svg",
       "description": "Creo la *estructura*, el *contenido* y la *propuesta visual* del proyecto, contemplando su funcionalidad."
     },
     {
       "id": "step-5",
       "title": "Desarrollar",
       "subtitle": "el producto",
-      "background": "step05",
+      "background": "/background/steps/step05.svg",
       "description": "Transformo el *diseño final aprobado en* una *solución funcional*, cuidando tanto lo técnico como la experiencia."
     },
     {
       "id": "step-6",
       "title": "Publicar",
       "subtitle": "y validar",
-      "background": "step06",
+      "background": "/background/steps/step06.svg",
       "description": "Subo el *proyecto a producción*, verifico su *correcto funcionamiento*, asegurando *rendimiento, claridad* y *calidad* en el producto final."
     },
     {
       "id": "step-7",
       "title": "Acompañar",
       "subtitle": "y mantener",
-      "background": "step07",
+      "background": "/background/steps/step07.svg",
       "description": "Brindo *soporte técnico* y *mantenimiento* para que el proyecto siga funcionando correctamente."
     }
   ]
