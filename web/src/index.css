@@ -1,4 +1,138 @@
+/*Quitar advertencia "unkdown at rule @tailwind" => 
+1- Abra el archivo CSS donde importa Tailwind CSS
+2-Presione Ctrl + Shift + P y busque “cambiar modo de idioma”
+3-Dentro de la barra de búsqueda, escriba "tailwindcss" y selecciónelo.
+Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y las advertencias deberían desaparecer*/
+
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-cream: #fdfcf5;
+  --color-linen: #f4f2e9;
+  --color-parchment: #e5e2d5;
+  --color-stone: #b2ad99;
+  --color-ink: #4a483f;
+  --color-yellow: #ffde00;
+  --color-orange: #ff8c00;
+  --color-magenta: #ff007a;
+  --color-purple: #7a5fff;
+  --color-mint: #55e6c1;
+  /* colores asignados */
+  --color-button-bg: var(--color-yellow);
+  --color-text-primary: var(--color-ink);
+  --color-text-strong: var(--color-purple);
+  --color-title: var(--color-orange);
+  --color-subtitle: var(--color-mint);
+  /* Font families */
+  --font-hero-title: "Montserrat", sans-serif;
+  --font-subtitle: "Space Grotesk", sans-serif;
+  --font-button: "Syne", sans-serif;
+  --font-body: "Space Mono", monospace;
+  --font-cta: "Fira Code", monospace;
+  /*dots*/
+  --bg-dots-button: radial-gradient(
+    var(--color-button-bg) 1.5px,
+    transparent 1.5px
+  );
+  --bg-dots-card: radial-gradient(var(--color-cream) 2px, transparent 2px);
+  --bg-dots-hover-card: radial-gradient(
+    var(--color-purple) 2px,
+    transparent 2px
+  );
+  --bg-dots-size: 8px 8px;
+  /*animacion imagen hero*/
+  --animate-fade1: fade1 2s infinite;
+  --animate-fade2: fade2 2s infinite;
+  --animate-carousel: carousel 45s linear infinite;
+}
+
+@keyframes fade1 {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade2 {
+  0%,
+  45% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+/*carrusel para poryectos*/
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --bg-dots-size: 10px 10px;
+    --bg-dots-button: radial-gradient(
+      var(--color-button-bg) 2px,
+      transparent 2px
+    );
+  }
+}
+
+/* estilos customizados*/
+@layer base {
+  body {
+    @apply bg-linen text-text-primary font-body text-xs md:text-sm;
+  }
+}
+.heroText {
+  @apply flex flex-col items-center text-center gap-2.5;
+  & h1 {
+    @apply text-xl md:text-3xl lg:text-4xl font-hero-title text-text-primary font-extrabold;
+  }
+  & h2 {
+    @apply text-base md:text-xl lg:text-2xl font-hero-title text-text-primary font-extrabold;
+  }
+  & p {
+    @apply w-5/6 text-sm lg:text-base font-subtitle text-text-primary font-bold md:w-4/6;
+  }
+  & h4 {
+    @apply text-xs md:text-sm lg:text-base font-cta text-text-primary;
+  }
+  & h5 {
+    @apply text-[0.6875rem] lg:text-sm font-cta text-text-primary;
+    & br {
+      @apply block md:hidden;
+    }
+    & span {
+      @apply text-orange;
+    }
+  }
+}
+.button-hero {
+  @apply text-text-primary font-button font-bold text-xl md:text-2xl lg:text-3xl w-full md:w-2/3 py-1 md:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
+  background-image: var(--bg-dots-button);
+  background-size: var(--bg-dots-size);
+}
+.navbar {
+  @apply hidden md:flex items-center justify-between py-1 px-6 bg-cream/20 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.3)];
+  & img {
+    @apply w-10 h-auto lg:w-12;
+  }
+  & h6 {
+    @apply text-xs lg:text-sm font-button font-bold text-text-primary;
+  }
+}
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;
