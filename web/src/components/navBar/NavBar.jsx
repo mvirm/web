@@ -23,6 +23,18 @@ const NavBar = () => {
     };
   }, [showMenu]);
 
+  //AUTO SCROLL PARA SECCIONES
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      console.log("scroll a " + id);
+    }
+  };
+
   return (
     <div>
       {/* Icono para Menu Desplegable */}
@@ -35,18 +47,18 @@ const NavBar = () => {
         />
       </div>
       <div className="navbar">
-        <img src={icon} alt="icon" />
-        <h6>servicios</h6>
-        <h6>beneficios</h6>
-        <h6>proyectos</h6>
-        <h6>procesos</h6>
-        <h6>acerca de mi</h6>
+        <img src={icon} alt="icon" onClick={() => scrollToSection("home")} />
+        <h6 onClick={() => scrollToSection("services")}>servicios</h6>
+        <h6 onClick={() => scrollToSection("benefits")}>beneficios</h6>
+        <h6 onClick={() => scrollToSection("projects")}>proyectos</h6>
+        <h6 onClick={() => scrollToSection("processes")}>procesos</h6>
+        <h6 onClick={() => scrollToSection("about")}>acerca de mi</h6>
         <h6>contacto</h6>
       </div>
       {/* Menu Desplegable */}
       {showMenu && (
         <div className="showMenu" ref={menuRef}>
-          <Menu setShowMenu={setShowMenu} />
+          <Menu setShowMenu={setShowMenu} scrollToSection={scrollToSection} />
         </div>
       )}
     </div>

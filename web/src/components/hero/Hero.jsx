@@ -12,7 +12,7 @@ const Hero = () => {
         <source media="(min-width: 768px)" srcSet={bgTD} />
         <img src={bgMobile} alt="" />
       </picture>
-      <div className="heroContent">
+      <div id="home" className="heroContent">
         <div className="heroLayout">
           <section className="sectionHeroText">
             <NavBar />

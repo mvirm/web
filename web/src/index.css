@@ -154,7 +154,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 }
 /*ESTILOS NAVBAR Y MENU DESPLEGABLE*/
 .navbar {
-  @apply hidden fixed w-3/5 md:flex items-center justify-between py-1 px-6 bg-cream/20 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.3)];
+  @apply hidden fixed w-3/5 md:flex items-center justify-between py-1 px-6 bg-cream/80 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.3)] pointer-events-auto cursor-pointer;
   & img {
     @apply w-10 h-auto md:w-6 lg:w-12;
   }
@@ -166,7 +166,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   @apply fixed block md:hidden w-8 h-auto ml-2 pointer-events-auto;
 }
 .menu {
-  @apply bg-linen/80 border-b-4 border-ink text-xs w-28 pl-4 pr-2 py-2 rounded-lg shadow-lg;
+  @apply bg-cream/80 border-b-4 border-ink text-xs w-28 pl-4 pr-2 py-2 rounded-lg shadow-lg pointer-events-auto;
   & img {
     @apply w-10 h-auto -ml-2.5 mt-1.5;
   }
