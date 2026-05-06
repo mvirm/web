@@ -95,24 +95,46 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply bg-linen text-text-primary font-body text-xs md:text-sm;
   }
 }
+/*ESTILOS HERO*/
+.heroContainer {
+  @apply relative z-30 pointer-events-none;
+  & picture {
+    @apply block w-full -top-12 md:top-0 lg:-top-12 relative pointer-events-none -mb-12 md:mb-0 lg:-mb-12;
+    & img {
+      @apply w-full h-auto object-contain;
+    }
+  }
+}
+.heroContent {
+  @apply absolute inset-0 w-full flex flex-col;
+}
+.heroLayout {
+  @apply flex flex-col md:flex-row md:grid-cols-3;
+}
+.sectionHeroText {
+  @apply w-full md:w-3/5 flex flex-col gap-0 lg:gap-10 order-2 md:order-1 border-2 border-red-500;
+}
+.sectionHeroImage {
+  @apply w-full md:w-2/5  order-1 md:order-2 -mb-8 md:mb-0 border-2 border-blue-500;
+}
 .heroText {
-  @apply flex flex-col items-center text-center gap-2.5;
+  @apply flex flex-col items-center text-center gap-1 lg:gap-2.5 mt-7 md:mt-10 lg:mt-12;
   & h1 {
-    @apply text-xl md:text-3xl lg:text-4xl font-hero-title text-text-primary font-extrabold;
+    @apply text-xl md:text-2xl lg:text-5xl font-hero-title text-text-primary font-extrabold;
   }
   & h2 {
-    @apply text-base md:text-xl lg:text-2xl font-hero-title text-text-primary font-extrabold;
+    @apply text-base  lg:text-2xl font-hero-title text-text-primary font-extrabold;
   }
   & p {
-    @apply w-5/6 text-sm lg:text-base font-subtitle text-text-primary font-bold md:w-4/6;
+    @apply w-5/6 md:w-full lg:w-4/6 text-sm md:text-xs lg:text-base font-subtitle text-text-primary font-bold;
   }
   & h4 {
-    @apply text-xs md:text-sm lg:text-base font-cta text-text-primary;
+    @apply text-xs  lg:text-base font-cta text-text-primary;
   }
   & h5 {
     @apply text-[0.6875rem] lg:text-sm font-cta text-text-primary;
     & br {
-      @apply block md:hidden;
+      @apply block lg:hidden;
     }
     & span {
       @apply text-orange;
@@ -120,18 +142,40 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   }
 }
 .button-hero {
-  @apply text-text-primary font-button font-bold text-xl md:text-2xl lg:text-3xl w-full md:w-2/3 py-1 md:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
+  @apply text-text-primary font-button font-bold text-xl lg:text-3xl w-full md:w-2/3 py-1 lg:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
   background-image: var(--bg-dots-button);
   background-size: var(--bg-dots-size);
 }
-.navbar {
-  @apply hidden md:flex items-center justify-between py-1 px-6 bg-cream/20 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.3)];
+.giftImage {
+  @apply relative w-full aspect-square mt-0 md:mt-4 lg:mt-0;
   & img {
-    @apply w-10 h-auto lg:w-12;
+    @apply absolute inset-0 w-full h-full object-cover -top-8 md:top-0;
+  }
+}
+/*ESTILOS NAVBAR Y MENU DESPLEGABLE*/
+.navbar {
+  @apply hidden fixed w-3/5 md:flex items-center justify-between py-1 px-6 bg-cream/20 shadow-[0_6px_6px_-4px_rgba(0,0,0,0.3)];
+  & img {
+    @apply w-10 h-auto md:w-6 lg:w-12;
   }
   & h6 {
-    @apply text-xs lg:text-sm font-button font-bold text-text-primary;
+    @apply text-[0.6875rem] lg:text-sm font-button text-text-primary;
   }
+}
+.iconMenu {
+  @apply fixed block md:hidden w-8 h-auto ml-2 pointer-events-auto;
+}
+.menu {
+  @apply bg-linen/80 border-b-4 border-ink text-xs w-28 pl-4 pr-2 py-2 rounded-lg shadow-lg;
+  & img {
+    @apply w-10 h-auto -ml-2.5 mt-1.5;
+  }
+  & h6 {
+    @apply text-sm font-button text-text-primary py-1 cursor-pointer;
+  }
+}
+.showMenu {
+  @apply fixed top-96 left-0 z-110 md:hidden;
 }
 /* :root {
   --text: #6b6375;
