@@ -23,7 +23,7 @@ const NavBar = () => {
     };
   }, [showMenu]);
 
-  //AUTO SCROLL PARA SECCIONES
+  //AUTO SCROLL PARA SECCIONES => scrollea y cierra el menu
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
@@ -31,7 +31,8 @@ const NavBar = () => {
         behavior: "smooth",
         block: "start",
       });
-      console.log("scroll a " + id);
+
+      setShowMenu(false);
     }
   };
 
@@ -58,7 +59,7 @@ const NavBar = () => {
       {/* Menu Desplegable */}
       {showMenu && (
         <div className="showMenu" ref={menuRef}>
-          <Menu setShowMenu={setShowMenu} scrollToSection={scrollToSection} />
+          <Menu scrollToSection={scrollToSection} />
         </div>
       )}
     </div>

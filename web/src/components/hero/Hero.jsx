@@ -19,11 +19,6 @@ const Hero = () => {
             <HeroText />
           </section>
           <section className="sectionHeroImage">
-            <img
-              src={icon}
-              alt="icon"
-              className="block md:hidden w-10 h-auto m-1"
-            />
             <GiftImage />
           </section>
         </div>

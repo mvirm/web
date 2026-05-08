@@ -6,15 +6,15 @@
       "anchor": "antes de construir",
       "description": "Comprendo *qué necesitás* y *qué objetivo tiene tu proyecto* antes de tomar cualquier decisión.",
       "image": "/images/benefits/understand.svg",
-      "highlight": "Cada paso parte de una base clara."
+      "highlight": "Cada paso parte de una base clara"
     },
     {
       "id": "benefit-2",
       "title": "Comunicar",
       "anchor": "de forma clara",
       "description": "Durante todo el proceso vas a saber *qué estamos haciendo* y *por qué*.",
-      "image": "/images/benefits/communicate.svg",
-      "highlight": "Podés tomar decisiones con seguridad."
+      "image": "/images/benefits/comunicate.svg",
+      "highlight": "Tomá decisiones con seguridad"
     },
     {
       "id": "benefit-3",
@@ -22,7 +22,7 @@
       "anchor": "soluciones a medida",
       "description": "Cada proyecto se construye en base a *lo que necesitás, nada de soluciones genéricas*.",
       "image": "/images/benefits/design.svg",
-      "highlight": "Todo tiene sentido dentro de tu proyecto."
+      "highlight": "Todo tiene sentido"
     },
     {
       "id": "benefit-4",
@@ -30,7 +30,7 @@
       "anchor": "con propósito",
       "description": "El objetivo no es solo que *se vea bien*, sino que *cumpla su función*.",
       "image": "/images/benefits/build.svg",
-      "highlight": "Tu web realmente hace lo que tiene que hacer."
+      "highlight": "Tu web genera resultados"
     }
   ]
 }
