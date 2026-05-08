@@ -1,30 +1,40 @@
-const ServiceCard = (
-  {
-    //   id,
-    //   title,
-    //   question,
-    //   image,
-    //   description,
-    //   highlights,
-  },
-) => {
+import ParseStrongText from "../utils/parseText/ParseStrongText";
+import ParseLigthText from "../utils/parseText/ParseLigthText";
+const ServiceCard = ({
+  id,
+  title,
+  question,
+  image,
+  description,
+  highlights,
+}) => {
   return (
-    <div className="border-2 border-yellow rounded-2xl bg-ink">
-      <div className="bg-cream rounded-2xl m-6">
-        {/* <h3>{title}</h3>
-        <div>
-          <section>
-            <img src={image} alt="icono" />
-            <span>{highlights[0]}</span>
-            <span>{highlights[1]}</span>
+    <div className="serviceCardContainer">
+      <div className="serviceCard">
+        {/* TITULO */}
+        <h3>{ParseLigthText(title)}</h3>
+        {/* CONTENIDO CENTRAL */}
+        <div className="serviceCardContent">
+          <section className="serviceCardHeader">
+            {/* PREGUNTA -solo visible en lg */}
+            <h6>{ParseStrongText(question)}</h6>
+            {/* IMAGEN */}
+            <div>
+              <img src={image} alt="icono" />
+            </div>
           </section>
-          <section>
-            <p>{question}</p>
-            <p>{description}</p>
+          {/* TEXTOS */}
+          <section className="serviceCardText ">
+            {/* PREGUNTA -solo visible en sm y md */}
+            <h6>{ParseStrongText(question)}</h6>
+            <p>{ParseStrongText(description)}</p>
           </section>
-        </div> */}
-        soy una card de servicio, estoy en construcción, pero pronto mostraré
-        mis datos reales
+        </div>
+        {/* HIGHLIGHTS */}
+        <section className="serviceCardHighlights">
+          <span>{highlights[0]}</span>
+          <span>{highlights[1]}</span>
+        </section>
       </div>
     </div>
   );

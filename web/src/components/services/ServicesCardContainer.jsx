@@ -1,23 +1,29 @@
 import { useState, useEffect } from "react";
-// import axios from "axios";
 import Card from "./ServiceCard";
 const ServicesCardContainer = () => {
-  //traigo los datos del json con axios
-  //   const [data, setData] = useState(null);
-  //   useEffect(() => {
-  //     axios
-  //       .get("/Json/projects.json")
-  //       .then((response) => {
-  //         setData(response.data.projects);
-  //       })
-  //       .catch((error) => {
-  //         console.error("Error fetching data:", error);
-  //       });
-  //   }, []);
+  //traigo los datos del json
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    fetch("/json/services.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Error en la respuesta");
+        }
+
+        return response.json();
+      })
+      .then((data) => {
+        setData(data.services);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
+  console.log("servicios: ", data);
 
   return (
-    <div className="flex flex-col md:flex-row gap-6 md:gap-8 lg:gap-12">
-      {/* {data?.map((service) => (
+    <div className="services-benefits-cards-container">
+      {data?.map((service) => (
         <Card
           key={service.id}
           id={service.id}
@@ -27,8 +33,7 @@ const ServicesCardContainer = () => {
           description={service.description}
           highlights={service.highlights}
         />
-      ))} */}
-      <Card />
+      ))}
     </div>
   );
 };

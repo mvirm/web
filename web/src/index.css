@@ -95,6 +95,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply bg-linen text-text-primary font-body text-xs md:text-sm;
   }
 }
+
 /*ESTILOS HERO*/
 .heroContainer {
   @apply relative z-30 pointer-events-none;
@@ -176,6 +177,69 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 }
 .showMenu {
   @apply fixed top-96 left-0 z-110 md:hidden;
+}
+
+/*ESTILOS CONTENEDOR SERVICIOS y PROYECTOS*/
+.services-projects-container {
+  @apply border-2 border-green-700 -top-10 md:-top-18 lg:-top-36 -mb-10 md:-mb-18 lg:-mb-36 relative;
+  & img {
+    @apply max-w-24 h-auto md:max-w-44 lg:max-w-96;
+  }
+  & p {
+    @apply text-xs md:text-sm lg:text-lg mt-2 lg:mt-12 w-full mb-2.5 lg:mb-4 text-justify;
+  }
+}
+/*ESTILOS CARDS CONTAINER SERVICIOS Y BENEFICIOS*/
+.services-benefits-cards-container {
+  @apply flex flex-col md:flex-row md:flex-wrap gap-2 justify-center items-center mb-4 lg:mb-6;
+}
+/*ESTILOS CARD SERVICIOS*/
+.serviceCardContainer {
+  @apply rounded-2xl w-11/12 h-72 md:w-90 md:h-86 lg:w-90 lg:h-132 flex flex-col justify-center items-center m-auto transition-all duration-300;
+
+  background-image: var(--bg-dots-card);
+  background-size: var(--bg-dots-size);
+}
+
+.serviceCardContainer:hover {
+  background-image: var(--bg-dots-hover-card);
+  transform: scale(1.03) translateY(-4px);
+}
+.serviceCard {
+  @apply bg-cream rounded-2xl w-11/12 h-11/12 md:w-10/12  flex flex-col p-2 lg:p-4;
+  & h3 {
+    @apply font-subtitle text-title font-bold text-lg lg:text-xl;
+  }
+}
+.serviceCardContent {
+  @apply flex flex-1 flex-row lg:flex-col items-center lg:items-stretch gap-2 h-full;
+}
+.serviceCardHeader {
+  @apply w-2/5 lg:w-full flex lg:flex-col h-full;
+  & h6 {
+    @apply hidden lg:block font-subtitle text-sm lg:text-base;
+  }
+  & div {
+    @apply flex flex-1 items-center justify-center lg:min-h-52;
+    & img {
+      @apply w-full h-auto max-w-32 lg:max-w-52;
+    }
+  }
+}
+.serviceCardText {
+  @apply w-3/5 lg:w-full flex flex-col justify-around h-full text-left lg:text-justify mr-2 leading-relaxed;
+  & h6 {
+    @apply block lg:hidden font-subtitle text-xs;
+  }
+  & p {
+    @apply text-xs lg:text-sm lg:mt-auto mb-1;
+  }
+}
+.serviceCardHighlights {
+  @apply flex flex-col mt-auto;
+  & span {
+    @apply font-button text-sm lg:text-base text-magenta font-semibold;
+  }
 }
 /* :root {
   --text: #6b6375;

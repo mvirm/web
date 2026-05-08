@@ -7,7 +7,7 @@ import Philosophy from "../philosophy/Philosophy.jsx";
 
 const Index = () => {
   return (
-    <div className="min-h-screen min-w-screen gap-0">
+    <div className="min-h-screen max-w-screen gap-0">
       <Hero />
       <Services />
       <Benefits />

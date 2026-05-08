@@ -6,21 +6,15 @@
       "question": "¿Querés empezar a *vender online* o ya tenés una tienda que no está dando resultados?",
       "image": "/images/services/eCommerce.svg",
       "description": "Diseño y desarrollo tiendas online con *procesos de compra simples y claros*, pensados para que tus clientes puedan *comprar rápido* y *sin complicaciones*.",
-      "highlights": [
-        "Más ventas",
-        "Mejor experiencia y una tienda lista para crecer"
-      ]
+      "highlights": ["Más ventas", "Clientes felices"]
     },
     {
       "id": "service-2",
       "title": "Desarrollo web a medida",
       "question": "¿Necesitás una *web para mostrar lo que hacés* o sentís que la que tenés no lo representa bien?",
       "image": "/images/services/customWeb.svg",
-      "description": "Creo *páginas web adaptadas a tu voz o tu negocio*: landings, webs institucionales o portfolios profesionales.",
-      "highlights": [
-        "Una presencia digital clara",
-        "Alineada a tus objetivos y pensada para generar impacto real"
-      ]
+      "description": "Creo *páginas web adaptadas a tu voz* o *tu negocio*: landings, webs institucionales o portfolios profesionales.",
+      "highlights": ["Presencia digital clara", "Alineada a tus objetivos"]
     },
     {
       "id": "service-3",
@@ -28,7 +22,7 @@
       "question": "¿Tu web *no está funcionando como esperabas*? ¿Es *lenta, confusa* o no *genera resultados*?",
       "image": "/images/services/optimization.svg",
       "description": "Analizo qué está fallando y lo *optimizo* para mejorar su *rendimiento* y *usabilidad*.",
-      "highlights": ["Mejor experiencia", "Más claridad y mejores resultados"]
+      "highlights": ["Mejor experiencia", "Mejores resultados"]
     },
     {
       "id": "service-4",
@@ -36,10 +30,7 @@
       "question": "¿Estás resolviendo *procesos manualmente* o con *herramientas que no se adaptan a vos*?",
       "image": "/images/services/customSoftware.svg",
       "description": "Desarrollo *soluciones digitales personalizadas* para *ordenar, simplificar* y *automatizar tu trabajo*.",
-      "highlights": [
-        "Menos tareas repetitivas",
-        "Más claridad en tus procesos y herramientas que te simplifican el día a día"
-      ]
+      "highlights": ["Menos tareas repetitivas", "Procesos más simples"]
     }
   ]
 }
