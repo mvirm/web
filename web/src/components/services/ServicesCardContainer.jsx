@@ -1,39 +1,35 @@
 import { useState, useEffect } from "react";
+import fetchData from "../utils/fetchData";
 import Card from "./ServiceCard";
+import Spinner from "../utils/Spinner";
+
 const ServicesCardContainer = () => {
   //traigo los datos del json
   const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    fetch("/json/services.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Error en la respuesta");
-        }
-
-        return response.json();
-      })
-      .then((data) => {
-        setData(data.services);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+    fetchData({ setData, fileName: "services", setLoading });
   }, []);
-  console.log("servicios: ", data);
 
   return (
     <div className="services-benefits-cards-container">
-      {data?.map((service) => (
-        <Card
-          key={service.id}
-          id={service.id}
-          title={service.title}
-          question={service.question}
-          image={service.image}
-          description={service.description}
-          highlights={service.highlights}
-        />
-      ))}
+      {loading ? (
+        <div className="spinnerContainer">
+          <Spinner text={"cargando beneficios..."} />
+        </div>
+      ) : (
+        data?.map((service) => (
+          <Card
+            key={service.id}
+            id={service.id}
+            title={service.title}
+            question={service.question}
+            image={service.image}
+            description={service.description}
+            highlights={service.highlights}
+          />
+        ))
+      )}
     </div>
   );
 };

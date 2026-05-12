@@ -7,7 +7,7 @@ import icon from "../../assets/icons/icon.svg";
 
 const Hero = () => {
   return (
-    <div className="heroContainer">
+    <div className="hero-project-container heroPictureLayout">
       <picture>
         <source media="(min-width: 768px)" srcSet={bgTD} />
         <img src={bgMobile} alt="" />

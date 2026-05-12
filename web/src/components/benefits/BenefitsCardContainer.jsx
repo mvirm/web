@@ -1,39 +1,35 @@
 import { useState, useEffect } from "react";
+import fetchData from "../utils/fetchData";
 import Card from "./BenefitCard";
-const BenefitsCardContainer = () => {
-  //traigo los datos del json
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    fetch("/json/benefits.json")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Error en la respuesta");
-        }
+import Spinner from "../utils/Spinner";
 
-        return response.json();
-      })
-      .then((data) => {
-        setData(data.benefits);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
+const BenefitsCardContainer = () => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  //traigo los datos del json
+  useEffect(() => {
+    fetchData({ setData, fileName: "benefits", setLoading });
   }, []);
-  console.log("beneficios: ", data);
 
   return (
     <div className="services-benefits-cards-container">
-      {data?.map((benefit) => (
-        <Card
-          id={benefit.id}
-          key={benefit.id}
-          title={benefit.title}
-          anchor={benefit.anchor}
-          description={benefit.description}
-          image={benefit.image}
-          highlight={benefit.highlight}
-        />
-      ))}
+      {loading ? (
+        <div className="spinnerContainer">
+          <Spinner text={"cargando beneficios..."} />
+        </div>
+      ) : (
+        data?.map((benefit) => (
+          <Card
+            id={benefit.id}
+            key={benefit.id}
+            title={benefit.title}
+            anchor={benefit.anchor}
+            description={benefit.description}
+            image={benefit.image}
+            highlight={benefit.highlight}
+          />
+        ))
+      )}
     </div>
   );
 };

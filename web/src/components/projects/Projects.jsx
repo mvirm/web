@@ -1,4 +1,21 @@
+import projects from "../../assets/titles/projects.svg";
+import ProjectsContainer from "./ProjectsContainer";
+import substractProjects from "../../assets/background/substractProjects.svg";
 const Projects = () => {
-  return <div id="projects"> Soy el contenedor de proyectos</div>;
+  return (
+    <div className="hero-project-container projectsPictureLayout">
+      <picture>
+        <img src={substractProjects} alt="" />
+      </picture>
+      <div id="projects" className="services-projects-container projectsLayout">
+        <img src={projects} alt="Proyectos" />
+        <p>
+          Cada proyecto nace de un problema concreto. Estas son algunas formas
+          en las que trabaje para resolverlos
+        </p>
+        <ProjectsContainer />
+      </div>
+    </div>
+  );
 };
 export default Projects;
