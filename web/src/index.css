@@ -224,13 +224,26 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   @apply -top-14 md:-top-76 lg:-top-144 -mb-14 md:-mb-76 lg:-mb-144;
 }
 /*ESTILOS DE CONTENEDOR BENEFICIOS Y PROCESOS */
-.benefits-process-container {
+/* .benefits-process-container {
   & section {
     @apply flex  items-center justify-center;
     & img {
       @apply max-w-full h-auto md:max-w-4/5 lg:max-w-full;
     }
   }
+  & p {
+    @apply text-xs md:text-sm lg:text-lg mt-2 md:mt-3 lg:mt-4 w-full mb-2.5 lg:mb-4 text-justify;
+  }
+} */
+.benefits-process-container {
+  & section {
+    @apply flex items-center justify-center w-full;
+
+    & img {
+      @apply block mx-auto max-w-full h-auto md:max-w-4/5 lg:max-w-full;
+    }
+  }
+
   & p {
     @apply text-xs md:text-sm lg:text-lg mt-2 md:mt-3 lg:mt-4 w-full mb-2.5 lg:mb-4 text-justify;
   }
