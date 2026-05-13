@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import fetchData from "../utils/fetchData";
-import Card from "./CardProcess";
+import Card from "./ProcessCard";
 import Spinner from "../utils/Spinner";
 
-const ProcessCardContainer = () => {
+const ProcessesCardContainer = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -11,7 +11,7 @@ const ProcessCardContainer = () => {
     fetchData({ setData, fileName: "processes", setLoading });
   }, []);
   return (
-    <div>
+    <div className="processesContainer">
       {loading ? (
         <div className="spinnerContainer">
           <Spinner text={"cargando beneficios..."} />
@@ -31,4 +31,4 @@ const ProcessCardContainer = () => {
     </div>
   );
 };
-export default ProcessCardContainer;
+export default ProcessesCardContainer;

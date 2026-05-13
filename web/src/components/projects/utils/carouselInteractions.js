@@ -15,7 +15,9 @@ const carouselInteractions = ({
 
     onMouseLeave: () => {
       setIsPaused(false);
-      goToNextSlide();
+      setTimeout(() => {
+        goToNextSlide();
+      }, 600);
     },
 
     onTouchStart: (e) => {

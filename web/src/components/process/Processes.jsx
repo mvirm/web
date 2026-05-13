@@ -1,8 +1,11 @@
-import ProcessCardContainer from "./ProcessCardContainer";
+import ProcessesCardContainer from "./ProcessesCardContainer";
 import process from "../../assets/titles/process.svg";
-const Process = () => {
+const Processes = () => {
   return (
-    <div id="process" className="benefits-process-container bg-linen">
+    <div
+      id="processes"
+      className="benefits-process-container bg-linen pb-4 processLayout"
+    >
       <section>
         <img src={process} alt="Proceso" />
       </section>
@@ -10,8 +13,8 @@ const Process = () => {
         Un proceso paso a paso, claro y acompañado, para que tengas control en
         cada etapa del proyecto.
       </p>
-      <ProcessCardContainer />
+      <ProcessesCardContainer />
     </div>
   );
 };
-export default Process;
+export default Processes;
