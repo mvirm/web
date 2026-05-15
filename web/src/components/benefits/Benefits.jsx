@@ -3,7 +3,7 @@ import BenefitsCardContainer from "./BenefitsCardContainer";
 
 const Benefits = () => {
   return (
-    <div id="benefits" className="benefits-process-container">
+    <div id="benefits" className="benefits-process-finallyCTA-container">
       <section>
         <img src={benefits} alt="Beneficios" />
       </section>

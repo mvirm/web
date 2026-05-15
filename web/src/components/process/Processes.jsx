@@ -4,7 +4,7 @@ const Processes = () => {
   return (
     <div
       id="processes"
-      className="benefits-process-container bg-linen pb-4 processLayout"
+      className="benefits-process-finallyCTA-container bg-linen pb-4 processLayout"
     >
       <section>
         <img src={process} alt="Proceso" />

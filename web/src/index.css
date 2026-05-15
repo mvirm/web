@@ -238,7 +238,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   @apply -mt-20 md:-mt-30 lg:-mt-48;
 }
 /*ESTILOS DE CONTENEDOR BENEFICIOS Y PROCESOS */
-.benefits-process-container {
+.benefits-process-finallyCTA-container {
   & section {
     @apply flex items-center justify-center w-full;
 
@@ -520,6 +520,29 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     & span {
       @apply font-bold;
     }
+  }
+}
+
+/*ESTILOS CTA FINAL*/
+.finallyCta {
+  @apply border-2 border-yellow  w-full flex flex-col items-center gap-2 self-start;
+  & div {
+    @apply w-full lg:w-5/6 grid grid-cols-7 items-center justify-center;
+    img {
+      @apply w-6 lg:w-10 h-auto col-span-1;
+    }
+    span {
+      @apply text-xs lg:text-base text-text-primary text-left col-span-6;
+    }
+  }
+}
+.sectionFinallyCta {
+  @apply w-full flex flex-col items-center mt-8 justify-center text-center;
+  & span {
+    @apply text-center;
+  }
+  & p {
+    @apply text-xs lg:text-sm text-title text-center;
   }
 }
 /* :root {

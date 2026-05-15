@@ -1,8 +1,8 @@
 import Hero from "../hero/Hero.jsx";
 import ServicesAndBenefits from "./ServicesAndBenefits.jsx";
 import ProjectsAndProcesses from "./ProjectsAndProcesses.jsx";
-import Philosophy from "../philosophy/Philosophy.jsx";
 import isotype from "../../assets/background/isotype.svg";
+import PhilosophyAndFinallyCta from "./PhilosophyAndFinallyCta.jsx";
 
 const Index = () => {
   return (
@@ -13,7 +13,7 @@ const Index = () => {
       <div className="w-full bg-linen flex-1 items-center pb-8">
         <img src={isotype} alt="" className="w-full" />
       </div>
-      <Philosophy />
+      <PhilosophyAndFinallyCta />
     </div>
   );
 };
