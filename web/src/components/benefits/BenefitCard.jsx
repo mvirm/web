@@ -12,7 +12,7 @@ const BenefitCard = ({ id, title, anchor, description, image, highlight }) => {
         {/* CONTENIDO CENTRAL */}
         <section className="benefitCardContent">
           {/* IMAGEN */}
-          <img src={image} alt={title} />
+          <img src={image} alt={title} loading="lazy" />
           <p>{ParseStrongText(description)}</p>
         </section>
         {/* HIGHLIGHTS */}

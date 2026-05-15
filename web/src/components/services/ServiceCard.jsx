@@ -20,7 +20,7 @@ const ServiceCard = ({
             <h6>{ParseStrongText(question)}</h6>
             {/* IMAGEN */}
             <div>
-              <img src={image} alt="icono" />
+              <img src={image} alt="icono" loading="lazy" />
             </div>
           </section>
           {/* TEXTOS */}

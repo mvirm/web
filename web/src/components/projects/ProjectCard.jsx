@@ -13,7 +13,7 @@ const ProjectCard = ({
     <div className="projectCard">
       <picture>
         <source media="(min-width: 768px)" srcSet={background[0]} />
-        <img src={background[1]} alt="" />
+        <img src={background[1]} alt="" loading="lazy" />
       </picture>
       <div className="projectCardContent">
         <section className="projectCardHead">
@@ -23,7 +23,7 @@ const ProjectCard = ({
         <div className="projectCardBody">
           <section className="projectCard-sectionImages">
             {images?.map((img, index) => (
-              <img key={index} src={img} />
+              <img key={index} src={img} loading="lazy" />
             ))}
           </section>
           <section className="projectCard-sectionDetails">

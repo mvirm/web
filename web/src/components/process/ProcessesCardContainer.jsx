@@ -11,7 +11,7 @@ const ProcessesCardContainer = () => {
     fetchData({ setData, fileName: "processes", setLoading });
   }, []);
   return (
-    <div className="processesContainer">
+    <div className="processesAndPhilophyContainer">
       {loading ? (
         <div className="spinnerContainer">
           <Spinner text={"cargando beneficios..."} />

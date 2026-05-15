@@ -7,7 +7,10 @@ const Projects = () => {
       <picture>
         <img src={substractProjects} alt="" />
       </picture>
-      <div id="projects" className="services-projects-container projectsLayout">
+      <div
+        id="projects"
+        className="services-projects-philosophy-container projectsLayout"
+      >
         <img src={projects} alt="Proyectos" />
         <p>
           Cada proyecto nace de un problema concreto. Estas son algunas formas

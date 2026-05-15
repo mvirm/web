@@ -96,6 +96,17 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   }
 }
 /*ESTILOS COMPONENTES REUTILIZABLES*/
+/*seccion de CTA + boton*/
+.ctaSection {
+  & span {
+    @apply text-sm md:text-base lg:text-xl font-cta text-text-primary w-full text-center;
+  }
+  & button {
+    @apply text-text-primary font-button font-bold text-xl lg:text-3xl w-full py-1 lg:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
+    background-image: var(--bg-dots-button);
+    background-size: var(--bg-dots-size);
+  }
+}
 /*spinner*/
 .spinnerContainer {
   @apply w-full h-full flex items-center justify-center;
@@ -207,8 +218,8 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   @apply fixed top-0 left-0 z-130 md:hidden;
 }
 /*ESTILOS CONTENEDORES*/
-/*ESTILOS CONTENEDOR SERVICIOS y PROYECTOS*/
-.services-projects-container {
+/*ESTILOS CONTENEDOR SERVICIOS  PROYECTOS Y FILOSOFIA*/
+.services-projects-philosophy-container {
   @apply border-2 border-green-700 w-full relative;
   & img {
     @apply max-w-24 h-auto md:max-w-44 lg:max-w-96;
@@ -218,23 +229,15 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   }
 }
 .servicesLayout {
-  @apply -top-10 md:-top-18 lg:-top-36 -mb-10 md:-mb-18 lg:-mb-36;
+  @apply -mt-22 md:-mt-18 lg:-mt-36;
 }
 .projectsLayout {
-  @apply -top-14 md:-top-76 lg:-top-144 -mb-14 md:-mb-76 lg:-mb-144;
+  @apply -mt-26 md:-mt-76 lg:-mt-144;
+}
+.philosophyLayout {
+  @apply -mt-20 md:-mt-30 lg:-mt-48;
 }
 /*ESTILOS DE CONTENEDOR BENEFICIOS Y PROCESOS */
-/* .benefits-process-container {
-  & section {
-    @apply flex  items-center justify-center;
-    & img {
-      @apply max-w-full h-auto md:max-w-4/5 lg:max-w-full;
-    }
-  }
-  & p {
-    @apply text-xs md:text-sm lg:text-lg mt-2 md:mt-3 lg:mt-4 w-full mb-2.5 lg:mb-4 text-justify;
-  }
-} */
 .benefits-process-container {
   & section {
     @apply flex items-center justify-center w-full;
@@ -256,7 +259,6 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 /*ESTILOS CARD SERVICIOS*/
 .serviceCardContainer {
   @apply rounded-2xl w-11/12 h-72 md:w-90 md:h-86 lg:w-90 lg:h-132 flex flex-col justify-center items-center m-auto transition-all duration-300;
-
   background-image: var(--bg-dots-card);
   background-size: var(--bg-dots-size);
 }
@@ -341,39 +343,6 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   & section {
     @apply border-2 border-yellow w-full md:w-1/3 lg:w-1/3 flex flex-col items-center mt-0 md:mt-2 lg:mt-14;
   }
-  /* & section {
-    @apply border-2 border-yellow w-full md:w-1/3 lg:w-1/3 flex flex-col items-center mt-0 md:mt-2 lg:mt-14;
-    & span {
-      @apply text-sm md:text-base lg:text-xl font-cta text-text-primary w-full text-center;
-    }
-  }
-  & button {
-    @apply text-text-primary font-button font-bold text-xl lg:text-3xl w-full py-1 lg:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
-    background-image: var(--bg-dots-button);
-    background-size: var(--bg-dots-size);
-  } */
-}
-.ctaSection {
-  & span {
-    @apply text-sm md:text-base lg:text-xl font-cta text-text-primary w-full text-center;
-  }
-  & button {
-    @apply text-text-primary font-button font-bold text-xl lg:text-3xl w-full py-1 lg:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
-    background-image: var(--bg-dots-button);
-    background-size: var(--bg-dots-size);
-  }
-}
-.projects-processes-ctaContainer {
-  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:items-center w-full px-4 gap-4 relative top-0 md:-top-24 lg:-top-26 mb-0 md:-mb-24 lg:-mb-26 bg-linen md:bg-transparent pb-2 md:pb-4 border-2;
-  & section {
-    @apply w-full flex flex-col items-center gap-2 md:col-start-2 lg:contents;
-    & span {
-      @apply lg:col-start-2;
-    }
-    & button {
-      @apply lg:col-start-3;
-    }
-  }
 }
 
 /*ESTILOS PROYECTOS */
@@ -381,16 +350,15 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   @apply w-full flex flex-row items-center justify-around;
   & img {
     @apply w-0 md:w-14 lg:w-18
-      h-auto
-      md:pointer-events-auto
-      cursor-pointer;
+    h-auto
+    md:pointer-events-auto
+    cursor-pointer;
   }
 }
 /*carrusel de cards */
 .carouselWrapper {
   @apply overflow-hidden w-full pointer-events-auto cursor-pointer;
 }
-
 .carouselTrack {
   @apply flex;
   transition: transform 0.6s ease-in-out;
@@ -461,9 +429,11 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 }
 
 /*ESTILOS DE PROCESOS*/
-.processesContainer {
+/*contenedor*/
+.processesAndPhilophyContainer {
   @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-4 gap-4 justify-items-center;
 }
+/*card procesos*/
 .process {
   @apply bg-cream rounded-2xl w-full relative overflow-hidden min-h-28 lg:min-h-34;
   & picture {
@@ -491,7 +461,67 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply font-body text-ink text-[0.8rem] md:text-xs lg:text-sm text-left md:text-justify leading-tight tracking-wide;
   }
 }
+/*CTA proyectos y Procesos */
+.projects-processes-ctaContainer {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:items-center w-full px-4 gap-4 relative top-0 md:-top-24 lg:-top-26 mb-0 md:-mb-24 lg:-mb-26 bg-linen md:bg-transparent pb-2 md:pb-4 border-2;
+  & section {
+    @apply w-full flex flex-col items-center gap-2 md:col-start-2 lg:contents;
+    & span {
+      @apply lg:col-start-2;
+    }
+    & button {
+      @apply lg:col-start-3;
+    }
+  }
+}
 
+/*ESTILOS CARD FILOSOFIA-FORMA DE PENSAR*/
+.philosophy {
+  @apply border-2 border-green-700 w-full relative overflow-hidden min-h-28 lg:min-h-34 flex items-center justify-center;
+  & picture {
+    @apply absolute h-full pointer-events-none;
+    & img {
+      @apply h-27 lg:h-33 w-auto object-contain;
+    }
+  }
+}
+.philosophyContent {
+  @apply absolute inset-0 z-10 flex flex-col items-start h-full;
+}
+.philosophyCardHead {
+  @apply flex flex-col items-center justify-center text-center w-full pt-2;
+  & h2 {
+    @apply text-xs md:text-sm leading-none font-cta;
+  }
+}
+.philosophyCardBody {
+  @apply flex-1 flex flex-col justify-center w-full min-h-0 pb-0 mb-0;
+  & p {
+    @apply font-body text-ink text-[0.8rem] md:text-xs lg:text-sm text-left md:text-justify leading-tight tracking-wide;
+  }
+}
+/*estilos card forma de pensar final*/
+.philosophyFinally {
+  @apply border-2 border-green-700 w-full relative overflow-hidden min-h-28 lg:min-h-40 flex items-center justify-center;
+  & picture {
+    @apply absolute h-full pointer-events-none;
+    & img {
+      @apply h-27 lg:h-40 w-auto object-contain;
+    }
+  }
+}
+.philosophyFinallyContent {
+  @apply absolute inset-0 z-10 flex flex-col items-center justify-center h-full text-center w-full;
+  & p {
+    @apply w-full font-body text-ink text-xs md:text-sm lg:text-xl text-center leading-tight tracking-wide pt-1;
+  }
+  & h6 {
+    @apply font-cta text-base md:text-xl lg:text-3xl text-text-strong w-full md:w-5/6 mb-2 md:mb-3 lg:mb-10;
+    & span {
+      @apply font-bold;
+    }
+  }
+}
 /* :root {
   --text: #6b6375;
   --text-h: #08060d;

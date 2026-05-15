@@ -10,7 +10,7 @@ const Index = () => {
       <Hero />
       <ServicesAndBenefits />
       <ProjectsAndProcesses />
-      <div className="w-full bg-linen flex-1 items-center pb-4">
+      <div className="w-full bg-linen flex-1 items-center pb-8">
         <img src={isotype} alt="" className="w-full" />
       </div>
       <Philosophy />
