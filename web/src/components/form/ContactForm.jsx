@@ -2,11 +2,11 @@ import { useState } from "react";
 import CTASection from "../utils/CTASection";
 import emailjs from "@emailjs/browser";
 const ContactForm = () => {
-const EMAILJS_CONFIG = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
-};
+  const EMAILJS_CONFIG = {
+    serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+  };
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,33 +21,33 @@ const EMAILJS_CONFIG = {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Me llega un mail con todo el mensaje y se envia mail al cliente con respuesta automatica (emailsJS)
-  try {
-    await emailjs.send(
-      EMAILJS_CONFIG.serviceId,
-      EMAILJS_CONFIG.templateId,
-      {
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-      },
-      EMAILJS_CONFIG.publicKey
-    );
+    try {
+      await emailjs.send(
+        EMAILJS_CONFIG.serviceId,
+        EMAILJS_CONFIG.templateId,
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        EMAILJS_CONFIG.publicKey,
+      );
 
-    alert("Mensaje enviado ✨");
+      alert("Mensaje enviado ✨");
 
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-  } catch (error) {
-    console.error(error);
-    alert("Hubo un error al enviar el mensaje");
-  }
-};
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Hubo un error al enviar el mensaje");
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit} className="contactForm">
@@ -90,4 +90,3 @@ const EMAILJS_CONFIG = {
 };
 
 export default ContactForm;
-
