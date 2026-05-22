@@ -1,5 +1,5 @@
 import Philosophy from "../philosophy/Philosophy";
-import FinallyCta from "../FinallyCta/FinallyCta";
+import FinallyCta from "../finallyCta/FinallyCta";
 import CTASection from "../utils/CTASection";
 
 const PhilosophyAndFinallyCta = ({ setShowModal }) => {
