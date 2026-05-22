@@ -1,5 +1,9 @@
-const ButtonCTA = () => {
-  return <button className="button-hero">contame tu idea</button>;
+const ButtonCTA = ({ setShowModal }) => {
+  return (
+    <button className="button-hero" onClick={() => setShowModal(true)}>
+      contame tu idea
+    </button>
+  );
 };
 
 export default ButtonCTA;

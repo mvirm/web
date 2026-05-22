@@ -2,9 +2,9 @@ import Philosophy from "../philosophy/Philosophy";
 import FinallyCta from "../FinallyCta/FinallyCta";
 import CTASection from "../utils/CTASection";
 
-const PhilosophyAndFinallyCta = () => {
+const PhilosophyAndFinallyCta = ({ setShowModal }) => {
   return (
-    <div className="border-2 border-red-500 bg-linen">
+    <div className=" bg-linen">
       <Philosophy />
       <FinallyCta />
       <div className="sectionFinallyCta">
@@ -13,6 +13,7 @@ const PhilosophyAndFinallyCta = () => {
             "Podemos tener una primera charla para entender tu caso y ver como avanzar"
           }
           buttonText={"coordinemos una reunión"}
+          setShowModal={setShowModal}
         />
         <p>sin compromiso, es solo una charla</p>
       </div>

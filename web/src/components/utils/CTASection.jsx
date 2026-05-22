@@ -1,8 +1,8 @@
-const CTASection = ({ text, buttonText }) => {
+const CTASection = ({ text, buttonText, setShowModal }) => {
   return (
     <section className="ctaSection">
       <span>{text}</span>
-      <button>{buttonText}</button>
+      <button onClick={() => setShowModal(true)}>{buttonText}</button>
     </section>
   );
 };

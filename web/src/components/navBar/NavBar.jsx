@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Menu from "./Menu";
 import icon from "../../assets/icons/icon.svg";
 import menu from "../../assets/icons/menu.svg";
-const NavBar = () => {
+const NavBar = ({ setShowModal }) => {
   // codigo para mostrar el menu desplegable en pantallas pequeñas
   const [showMenu, setShowMenu] = useState(false);
   const showMenuHandler = () => {
@@ -54,12 +54,12 @@ const NavBar = () => {
         <h6 onClick={() => scrollToSection("projects")}>proyectos</h6>
         <h6 onClick={() => scrollToSection("processes")}>procesos</h6>
         <h6 onClick={() => scrollToSection("about")}>acerca de mi</h6>
-        <h6>contacto</h6>
+        <h6 onClick={() => setShowModal(true)}>contacto</h6>
       </div>
       {/* Menu Desplegable */}
       {showMenu && (
         <div className="showMenu" ref={menuRef}>
-          <Menu scrollToSection={scrollToSection} />
+          <Menu scrollToSection={scrollToSection} setShowModal={setShowModal} />
         </div>
       )}
     </div>

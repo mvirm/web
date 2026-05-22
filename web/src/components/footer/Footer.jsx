@@ -3,7 +3,7 @@ import footerDesktop from "../../assets/background/tabletDesktop/footer.svg";
 import wsp from "../../assets/icons/wsp.svg";
 import email from "../../assets/icons/email.svg";
 
-const Footer = () => {
+const Footer = ({ setShowModal }) => {
   return (
     <footer className="footer">
       <picture>
@@ -23,7 +23,7 @@ const Footer = () => {
               WHATSAPP
             </a>
           </div>
-          <div>
+          <div onClick={() => setShowModal(true)} style={{ cursor: "pointer" }}>
             <img src={email} alt="email" />
             <h6>CONTACTO</h6>
           </div>

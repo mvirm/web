@@ -1,6 +1,6 @@
 import ButtonCTA from "./ButtonCTA.jsx";
 
-const HeroText = () => {
+const HeroText = ({ setShowModal }) => {
   return (
     <div className="heroText">
       <h1>DESARROLLO WEB & DISEÑO</h1>
@@ -14,7 +14,7 @@ const HeroText = () => {
         ¿Tenés un proyecto en mente?
         <br /> Te ayudo a llevarlo a la realidad digital.
       </h4>
-      <ButtonCTA />
+      <ButtonCTA setShowModal={setShowModal} />
       <h5>
         ¿Tenés una web que no funciona como esperabas?
         <br />

@@ -2,21 +2,29 @@ import close from "../../assets/icons/close.svg";
 import title from "../../assets/titles/form.svg";
 import ContactForm from "./ContactForm";
 
-const FormModal = () => {
+const FormModal = ({ setShowModal }) => {
   const phoneNumber = import.meta.env.VITE_PHONE_NUMBER;
   return (
     <div className="open-modal">
       <div className="borderModal">
         <div className="modal">
           <header>
-            <button>
+            <button
+              type="button"
+              onClick={() => {
+                console.log("click");
+                setShowModal(false);
+              }}
+              style={{ cursor: "pointer" }}
+              aria-label="Cerrar formulario"
+            >
               <img src={close} alt="Cerrar" />
             </button>
             <img src={title} alt="Formulario" />
             <span>Vemos juntos como llevarla a la realidad</span>
           </header>
           <section>
-            <ContactForm />
+            <ContactForm setShowModal={setShowModal} />
           </section>
           <span>
             o escribime por{" "}
