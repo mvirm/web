@@ -91,6 +91,9 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 
 /* estilos customizados*/
 @layer base {
+  html {
+    color-scheme: light;
+  }
   body {
     @apply bg-parchment text-text-primary font-body text-xs md:text-sm;
   }
@@ -166,12 +169,12 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 }
 .heroPictureLayout {
   & picture {
-    @apply -top-12 md:top-0  -mb-12 md:mb-0;
+    @apply top-0  -mb-12 md:mb-0;
   }
 }
 .projectsPictureLayout {
   & picture {
-    @apply top-2 md:-top-22 lg:-top-40 -mb-12 md:mb-0;
+    @apply top-1 md:-top-22 lg:-top-40 -mb-12 md:mb-0;
   }
 }
 /*ESTILOS HERO*/
@@ -260,7 +263,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   }
 }
 .servicesLayout {
-  @apply -mt-22 md:-mt-18 lg:-mt-36;
+  @apply mt-8 md:-mt-18 lg:-mt-36;
 }
 .projectsLayout {
   @apply -mt-26 md:-mt-76 lg:-mt-144;
@@ -301,7 +304,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .serviceCard {
   @apply bg-cream rounded-2xl w-11/12 h-11/12 md:w-10/12  flex flex-col p-2 lg:p-4;
   & h3 {
-    @apply font-subtitle text-title font-bold text-lg lg:text-xl;
+    @apply font-subtitle text-title font-bold text-base md:text-lg lg:text-xl;
   }
 }
 .serviceCardContent {
@@ -325,11 +328,11 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply block lg:hidden font-subtitle text-xs;
   }
   & p {
-    @apply text-xs lg:text-sm lg:mt-auto mb-1;
+    @apply w-full p-0 text-xs lg:text-sm lg:mt-auto mb-1;
   }
 }
 .serviceCardHighlights {
-  @apply flex flex-col mt-auto;
+  @apply flex flex-col -mt-2.5 md:mt-auto;
   & span {
     @apply font-button text-sm lg:text-base text-magenta font-semibold;
   }
@@ -362,7 +365,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply w-1/3 h-auto lg:w-3/5;
   }
   & p {
-    @apply text-xs lg:text-sm mt-2 lg:mt-4 text-left lg:text-justify leading-relaxed;
+    @apply text-xs lg:text-sm mt-2 lg:mt-4 text-left lg:text-justify leading-relaxed p-0;
   }
 }
 .benefitCardHighlight {
@@ -432,7 +435,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .projectCard-sectionImages {
   @apply flex w-full items-center justify-around order-1 md:order-2;
   & img {
-    @apply min-w-30 md:min-w-52 lg:min-w-96 h-auto;
+    @apply min-w-24 md:min-w-52 lg:min-w-96 h-auto;
   }
 }
 .projectCard-sectionDetails {
@@ -489,7 +492,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .processCardBody {
   @apply flex-1 flex flex-col justify-end w-full min-h-0 pb-0 mb-0;
   & p {
-    @apply font-body text-ink text-[0.8rem] md:text-xs lg:text-sm text-left md:text-justify leading-tight tracking-wide;
+    @apply font-body text-ink text-[0.8rem] md:text-xs lg:text-sm text-left md:text-justify leading-tight tracking-wide p-0;
   }
 }
 /*CTA proyectos y Procesos */
@@ -528,12 +531,12 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .philosophyCardBody {
   @apply flex-1 flex flex-col justify-center w-full min-h-0 pb-0 mb-0 p-4;
   & p {
-    @apply font-body text-ink text-[0.8rem] md:text-xs lg:text-sm text-left md:text-justify leading-tight tracking-wide;
+    @apply font-body text-ink text-[0.8rem] md:text-xs lg:text-sm text-left md:text-justify leading-tight tracking-wide p-0;
   }
 }
 /*estilos card forma de pensar final*/
 .philosophyFinally {
-  @apply w-full relative overflow-hidden min-h-28 lg:min-h-40 flex items-center justify-center mt-6 lg:mt-10;
+  @apply w-full relative overflow-hidden min-h-36 lg:min-h-40 flex items-center justify-center mt-6 lg:mt-10;
   & picture {
     @apply absolute h-full pointer-events-none;
     & img {
@@ -544,7 +547,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .philosophyFinallyContent {
   @apply absolute inset-0 z-10 flex flex-col items-center justify-center h-full text-center w-full pb-10;
   & p {
-    @apply w-full font-body text-ink text-xs md:text-sm lg:text-xl text-center leading-tight tracking-wide pt-1;
+    @apply w-full font-body text-ink text-xs md:text-sm lg:text-xl text-center leading-tight tracking-wide pt-1 px-0;
   }
   & h6 {
     @apply font-cta text-base md:text-xl lg:text-3xl text-text-strong w-full md:w-5/6 mb-2 md:mb-3 lg:mb-10;
@@ -603,8 +606,11 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
         @apply text-base lg:text-lg font-cta text-text-primary;
       }
     }
-    & p {
-      @apply text-xs lg:text-sm text-text-primary mt-auto;
+  }
+  & p {
+    @apply w-full text-xs lg:text-sm text-text-primary mt-auto text-center;
+    & br {
+      @apply block md:hidden;
     }
   }
 }
@@ -641,7 +647,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply w-full flex-1 flex items-center justify-center;
   }
   & span {
-    @apply text-sm md:text-base lg:text-lg font-cta text-text-primary w-full text-center mb-10 md:mb-8 lg:mb-4;
+    @apply text-xs md:text-base lg:text-lg font-cta text-text-primary w-full text-center mb-10 md:mb-8 lg:mb-4;
     & a {
       @apply text-orange pointer-events-auto hover:text-magenta transition-colors duration-200;
     }
@@ -660,11 +666,11 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
       @apply w-full lg:w-4/5 rounded-lg border border-stone  bg-linen p-2 text-sm md:text-base font-cta text-text-primary pointer-events-auto focus:outline-none focus:ring-2 focus:ring-orange transition-all duration-200;
     }
     & textarea {
-      @apply resize-none h-80 md:h-72 lg:h-40 overflow-y-auto;
+      @apply resize-none h-64 md:h-72 lg:h-40 overflow-y-auto;
     }
   }
   & button {
-    @apply text-text-primary font-button font-bold text-xl lg:text-2xl w-full md:w-10/12 lg:w-2/3 mt-10 md:mt-0 py-3 lg:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
+    @apply text-text-primary font-button font-bold text-xl lg:text-2xl w-full md:w-10/12 lg:w-2/3 mt-0 py-3 lg:py-4 hover:bg-(--color-button-bg) transition-all duration-300 pointer-events-auto;
     background-image: var(--bg-dots-button);
     background-size: var(--bg-dots-size);
   }

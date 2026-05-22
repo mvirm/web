@@ -28,7 +28,10 @@ const Footer = ({ setShowModal }) => {
             <h6>CONTACTO</h6>
           </div>
         </section>
-        <p>© 2026 Virginia Montoya Web Site. All rights reserved.</p>
+        <p>
+          ©2026 Virginia Montoya Web Site.
+          <br /> All rights reserved.
+        </p>
       </div>
     </footer>
   );
