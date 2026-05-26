@@ -5,6 +5,8 @@ const CarouselDots = ({ data, current, setCurrent, setTransitionEnabled }) => {
         <button
           key={index}
           className={`carouselDot ${current === index + 1 ? "activeDot" : ""}`}
+          aria-label={`Ir al slide ${index + 1}`}
+          aria-current={current === index + 1 ? "true" : undefined}
           onClick={() => {
             setTransitionEnabled(true);
 

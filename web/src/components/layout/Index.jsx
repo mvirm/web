@@ -18,7 +18,7 @@ const Index = () => {
   }, 5500);
 
   return (
-    <div className="min-h-screen max-w-screen gap-0">
+    <main className="min-h-screen max-w-screen gap-0">
       {isLoading ? (
         <InitialLoading />
       ) : (
@@ -34,7 +34,7 @@ const Index = () => {
         </>
       )}
       {showModal && <FormModal setShowModal={setShowModal} />}
-    </div>
+    </main>
   );
 };
 
