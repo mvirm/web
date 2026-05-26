@@ -5,7 +5,11 @@ const InitialLoading = () => {
   return (
     <div className="initialLoading">
       <picture>
-        <img src={initialLoading} alt="Initial Loading" />
+        <img
+          src={initialLoading}
+          alt="background loading inicial"
+          fetchpriority="high"
+        />
       </picture>
       <div>
         <GiftImage />

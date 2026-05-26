@@ -6,7 +6,11 @@ const PhilosophyFinallyCard = () => {
   return (
     <div className="philosophyFinally">
       <picture>
-        <img src={background} alt="" loading="lazy" />
+        <img
+          src={background}
+          alt="background final forma de pensar"
+          loading="lazy"
+        />
       </picture>
       <div className="philosophyFinallyContent">
         <p>

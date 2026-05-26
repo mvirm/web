@@ -5,7 +5,7 @@ const PhilosophyCard = ({ id, title, text, background }) => {
   return (
     <div className="philosophy">
       <picture>
-        <img src={background} alt="" loading="lazy" />
+        <img src={background} alt="background forma de pensar" loading="lazy" />
       </picture>
       <div className="philosophyContent">
         <section className="philosophyCardHead">

@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <div className="hero-project-container projectsPictureLayout">
       <picture>
-        <img src={substractProjects} alt="" />
+        <img src={substractProjects} alt="background proyectos" />
       </picture>
       <div
         id="projects"

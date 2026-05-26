@@ -13,7 +13,7 @@ const ProjectCard = ({
     <div className="projectCard">
       <picture>
         <source media="(min-width: 768px)" srcSet={background[0]} />
-        <img src={background[1]} alt="" loading="lazy" />
+        <img src={background[1]} alt={title} loading="lazy" />
       </picture>
       <div className="projectCardContent">
         <section className="projectCardHead">

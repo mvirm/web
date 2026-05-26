@@ -4,7 +4,7 @@ const CardProcess = ({ id, title, subtitle, background, description }) => {
   return (
     <div className="process">
       <picture>
-        <img src={background} alt="" loading="lazy" />
+        <img src={background} alt={title} loading="lazy" />
       </picture>
       <div className="processContent">
         <section className="processCardHead">

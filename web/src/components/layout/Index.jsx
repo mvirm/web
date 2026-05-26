@@ -27,7 +27,7 @@ const Index = () => {
           <ServicesAndBenefits setShowModal={setShowModal} />
           <ProjectsAndProcesses setShowModal={setShowModal} />
           <div className="w-full bg-linen flex-1 items-center pb-8 mt-0 md:mt-2 lg:mt-4">
-            <img src={isotype} alt="" className="w-full" />
+            <img src={isotype} alt="isotype" className="w-full" />
           </div>
           <PhilosophyAndFinallyCta setShowModal={setShowModal} />
           <Footer setShowModal={setShowModal} />

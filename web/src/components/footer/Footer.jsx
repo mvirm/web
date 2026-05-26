@@ -8,7 +8,7 @@ const Footer = ({ setShowModal }) => {
     <footer className="footer">
       <picture>
         <source media="(min-width: 768px)" srcSet={footerDesktop} />
-        <img src={footerMobile} alt="" />
+        <img src={footerMobile} alt="background footer" />
       </picture>
       <div className="footerContent">
         <section>

@@ -10,7 +10,7 @@ const Hero = ({ setShowModal }) => {
     <div className="hero-project-container heroPictureLayout">
       <picture>
         <source media="(min-width: 768px)" srcSet={bgTD} />
-        <img src={bgMobile} alt="" />
+        <img src={bgMobile} alt="background hero" />
       </picture>
       <div id="home" className="heroContent">
         <div className="heroLayout">
