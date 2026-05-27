@@ -688,3 +688,72 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply text-sm lg:text-base font-cta text-text-primary;
   }
 }
+
+/*ESTILOS CARD PRECIOS*/
+.priceCardContainer {
+  @apply rounded-2xl w-11/12 h-214 lg:w-90 flex flex-col justify-center items-center m-auto transition-all duration-300;
+  background-image: var(--bg-dots-card);
+  background-size: var(--bg-dots-size);
+}
+
+.priceCardContainer:hover {
+  background-image: var(--bg-dots-hover-card);
+  transform: scale(1.03) translateY(-4px);
+}
+.priceCard {
+  @apply bg-cream rounded-2xl w-11/12 h-11/12  items-center flex flex-col px-2 py-4;
+  & h1 {
+    @apply font-subtitle text-title font-bold text-base md:text-lg lg:text-xl pl-2 text-left w-full;
+  }
+  & p {
+    @apply w-full pt-2 text-xs lg:text-sm font-cta text-text-primary;
+  }
+  & img {
+    @apply w-8/12 h-auto;
+  }
+  & button {
+    @apply text-magenta text-sm lg:text-xl  pointer-events-auto mt-auto hover:font-bold;
+  }
+}
+.sectionPrice {
+  @apply w-full gap-2 justify-evenly flex flex-row;
+  & div {
+    @apply flex flex-row  gap-2 bg-mint p-2;
+    & span {
+      @apply text-sm md:text-xs font-cta text-text-primary;
+    }
+    & h1 {
+      @apply text-cream font-bold font-subtitle text-base md:text-lg lg:text-xl;
+    }
+  }
+  & h6 {
+    @apply text-sm md:text-base font-subtitle text-text-strong font-bold;
+  }
+}
+.sectionBody {
+  @apply w-full flex flex-col items-center gap-4 mt-auto;
+  & section {
+    @apply w-full flex flex-row items-center gap-2;
+    & img {
+      @apply w-8 h-auto;
+    }
+    & p {
+      @apply flex flex-wrap text-xs font-cta text-text-primary;
+    }
+    & div {
+      @apply flex flex-col gap-2;
+      & span {
+        @apply text-sm  text-text-primary;
+      }
+      & ul {
+        @apply list-disc list-inside;
+        & li {
+          @apply text-xs   text-text-primary;
+          & span {
+            @apply text-xs text-text-strong font-bold;
+          }
+        }
+      }
+    }
+  }
+}

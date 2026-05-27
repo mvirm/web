@@ -1,0 +1,123 @@
+{
+  "prices": [
+    {
+      "id": "landing-page",
+      "title": "Landing page",
+      "prices": {
+        "ars": "350K",
+        "usd": "300"
+      },
+      "icon": "/images/prices/landing.svg",
+      "description": "Ideal para presentar un producto, servicio o propuesta de forma clara, profesional y enfocada en generar contacto o conversiones.",
+      "includes": [
+        "*Diseño UX/UI* personalizado en Figma",
+        "Desarrollo *responsive* (móvil, tablet y desktop)",
+        "*Desarrollo* completo en código",
+        "*Optimización* de rendimiento",
+        "*SEO* básico inicial",
+        "Integración de *formulario de contacto*",
+        "Publicación en producción"
+      ],
+      "time": "1-2",
+      "useCases": "Lanzamiento de un producto - Captación de clientes - Servicios profesionales - Eventos o workshops - Portfolio personal",
+      "details": [
+        "Puede incluir animaciones e interacciones simples",
+        "Se entrega *lista para funcionar* en producción",
+        "El cliente debe contratar y renovar su dominio anualmente",
+        "*Hosting* simple *incluido* según necesidad del proyecto",
+        "No incluye backend ni base de datos"
+      ]
+    },
+    {
+      "id": "professional-website",
+      "title": "Página web profesional",
+      "prices": {
+        "ars": "650K",
+        "usd": "650"
+      },
+      "icon": "/images/prices/website.svg",
+      "description": "Pensada para mostrar tu marca, servicios o negocio con una presencia digital clara, sólida y alineada a tus objetivos.",
+      "includes": [
+        "Diseño y estructura personalizada",
+        "*Diseño UX/UI* en Figma",
+        "Desarrollo *responsive* (móvil, tablet, desktop)",
+        "*Secciones adaptadas* a tu negocio",
+        "Optimización *SEO* básica",
+        "Integración de contacto y redes",
+        "Buenas prácticas de *performance* y *accesibilidad*",
+        "Publicación en producción"
+      ],
+      "time": "2-4",
+      "useCases": "Estudios profesionales - Marcas personales - Empresas de servicios - Agencias o consultoras - Negocios que necesitan presencia digital",
+      "details": [
+        "Puede incluir *múltiples secciones* o páginas internas",
+        "*Integración* con WhatsApp, formularios y *redes sociales*",
+        "El cliente debe contratar y renovar su dominio anualmente -costo sujeto a proveedor",
+        "*Hosting incluido* según características del proyecto",
+        "Funcionalidades avanzadas o paneles autogestionables se cotizan aparte",
+        "No incluye backend ni base de datos -de ser necesarios se cotizaran aparte"
+      ]
+    },
+    {
+      "id": "ecommerce",
+      "title": "Tienda online (e-commerce)",
+      "prices": {
+        "ars": "1.5M",
+        "usd": "1300"
+      },
+      "icon": "/images/prices/ecommerce.svg",
+      "description": "Una tienda online pensada para vender de forma clara, rápida y profesional.",
+      "includes": [
+        "Diseño personalizado de la tienda",
+        "*Diseño UX/UI* enfocado en experiencia de compra",
+        "Desarrollo *responsive*",
+        "Integración de *pasarela de pagos*",
+        "*Catálogo* de productos",
+        "*Panel administrador* básico",
+        "Optimización *SEO* inicial",
+        "Publicación en producción"
+      ],
+      "time": "4-6",
+      "useCases": "Tiendas de indumentaria - Cosmética y skincare - Productos digitales - Joyería y accesorios - Catálogos de productos físicos",
+      "details": [
+        "Opción *base*: carga inicial de *hasta 5 productos*",
+        "Productos adicionales se cotizan aparte",
+        "Opción *autogestionable*: panel para administrar productos, stock y pedidos",
+        "Incluye *desarrollo* de *backend* y *base de datos*",
+        "Funcionalidades avanzadas se cotizan según complejidad",
+        "El cliente debe contratar y renovar su dominio anualmente -valor sujeto al proveedor",
+        "*Mantenimiento* técnico mensual y *alojamiento* del sistema: ARS 50K/mes -sujeto a modificaciones del servicio de hosting e infraestructura"
+      ]
+    },
+    {
+      "id": "custom-software",
+      "title": "Software a medida",
+      "prices": {
+        "ars": null,
+        "usd": null
+      },
+      "icon": "/images/prices/software.svg",
+      "description": "Soluciones digitales personalizadas para ordenar, automatizar y optimizar procesos de trabajo.",
+      "includes": [
+        "*Análisis* del problema y definición de objetivos",
+        "*Diseño UX/UI* funcional",
+        "Desarrollo *frontend* y *backend*",
+        "*Base de datos*",
+        "*Lógica de negocio* personalizada",
+        "*Validaciones* y estructura de datos",
+        "*Optimización* técnica y *escalabilidad*",
+        "Publicación en producción"
+      ],
+      "time": null,
+      "useCases": "Sistemas de gestión internos - Automatización de procesos -Control de stock - Gestión de clientes o turnos - Plataformas administrativas",
+      "details": [
+        "Cada software se *desarrolla según necesidades específicas*",
+        "Puede incluir usuarios, permisos, dashboards, automatizaciones o integraciones externas",
+        "Incluye desarrollo de *infraestructura*, *backend* y *base de datos según* las *necesidades del proyecto*",
+        "El *mantenimiento* técnico mensual y *alojamiento* del sistema se cotizan aparte",
+        "El cliente debe contratar y renovar su dominio anualmente -valor sujeto al proveedor elegido",
+        "El *alcance* final, *tiempos* y *costos* se definen *luego de analizar el proyecto*"
+      ]
+    }
+  ]
+}

@@ -54,6 +54,7 @@ const NavBar = ({ setShowModal }) => {
         <h6 onClick={() => scrollToSection("projects")}>proyectos</h6>
         <h6 onClick={() => scrollToSection("processes")}>procesos</h6>
         <h6 onClick={() => scrollToSection("about")}>acerca de mi</h6>
+        <h6 onClick={() => scrollToSection("prices")}>precios</h6>
         <h6 onClick={() => setShowModal(true)}>contacto</h6>
       </div>
       {/* Menu Desplegable */}

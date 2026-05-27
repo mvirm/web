@@ -1,9 +1,10 @@
 import cta from "../../assets/titles/cta.svg";
 import check from "../../assets/icons/check.svg";
+import PricesCardContainer from "../prices/PricesCardContainer";
 
 const FinallyCta = () => {
   return (
-    <div className="benefits-process-finallyCTA-container">
+    <div id="prices" className="benefits-process-finallyCTA-container">
       <section>
         <img src={cta} alt="llamado a la accion" />
       </section>
@@ -27,6 +28,7 @@ const FinallyCta = () => {
           </span>
         </div>
       </section>
+      <PricesCardContainer />
     </div>
   );
 };
