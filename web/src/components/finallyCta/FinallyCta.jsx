@@ -1,8 +1,8 @@
 import cta from "../../assets/titles/cta.svg";
 import check from "../../assets/icons/check.svg";
-import PricesCardContainer from "../prices/PricesCardContainer";
+import Prices from "../prices/Prices";
 
-const FinallyCta = () => {
+const FinallyCta = ({ setShowModal }) => {
   return (
     <div id="prices" className="benefits-process-finallyCTA-container">
       <section>
@@ -28,7 +28,7 @@ const FinallyCta = () => {
           </span>
         </div>
       </section>
-      <PricesCardContainer />
+      <Prices setShowModal={setShowModal} />
     </div>
   );
 };

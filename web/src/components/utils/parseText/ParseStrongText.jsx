@@ -1,6 +1,6 @@
 const ParseStrongText = (text) => {
-  return text.split(/(\*.*?\*)/g).map((part, index) => {
-    // si el fragmento está entre *
+  return text.split(/(\*.*?\*|-.*?-)/g).map((part, index) => {
+    // texto entre *
     if (part.startsWith("*") && part.endsWith("*")) {
       return (
         <span key={index} className="font-bold text-text-strong">
@@ -8,6 +8,16 @@ const ParseStrongText = (text) => {
         </span>
       );
     }
+
+    // texto entre -
+    if (part.startsWith("-") && part.endsWith("-")) {
+      return (
+        <span key={index} className="text-title">
+          {part.slice(1, -1)}
+        </span>
+      );
+    }
+
     return part;
   });
 };

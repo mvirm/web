@@ -274,7 +274,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 /*ESTILOS DE CONTENEDOR BENEFICIOS Y PROCESOS */
 .benefits-process-finallyCTA-container {
   & section {
-    @apply flex items-center justify-center w-full;
+    @apply items-center w-full;
 
     & img {
       @apply block mx-auto max-w-full h-auto md:max-w-4/5 lg:max-w-full;
@@ -288,7 +288,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 
 /*ESTILOS CARDS CONTAINER SERVICIOS Y BENEFICIOS*/
 .services-benefits-cards-container {
-  @apply flex flex-col md:flex-row md:flex-wrap gap-2 justify-center items-center mb-4 lg:mb-6;
+  @apply flex flex-col md:flex-row md:flex-wrap gap-2  mb-4 lg:mb-6;
 }
 /*ESTILOS CARD SERVICIOS*/
 .serviceCardContainer {
@@ -339,7 +339,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 }
 /*ESTILOS CARD BENEFICIOS*/
 .benefitCardContainer {
-  @apply rounded-2xl w-11/12 h-52 md:w-90 lg:w-90 lg:h-100 flex flex-col justify-center items-center m-auto transition-all duration-300;
+  @apply rounded-2xl w-11/12 h-52 md:w-90 lg:w-90 lg:h-114 flex flex-col justify-center items-center m-auto transition-all duration-300;
   background-image: var(--bg-dots-card);
   background-size: var(--bg-dots-size);
 }
@@ -691,7 +691,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 
 /*ESTILOS CARD PRECIOS*/
 .priceCardContainer {
-  @apply rounded-2xl w-11/12 h-214 lg:w-90 flex flex-col justify-center items-center m-auto transition-all duration-300;
+  @apply rounded-2xl w-11/12 h-210 md:h-200 lg:h-214 md:w-90 flex flex-col justify-center items-center m-auto transition-all duration-300;
   background-image: var(--bg-dots-card);
   background-size: var(--bg-dots-size);
 }
@@ -701,7 +701,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   transform: scale(1.03) translateY(-4px);
 }
 .priceCard {
-  @apply bg-cream rounded-2xl w-11/12 h-11/12  items-center flex flex-col px-2 py-4;
+  @apply bg-cream rounded-2xl w-11/12 h-11/12  items-stretch flex flex-col px-2 py-4;
   & h1 {
     @apply font-subtitle text-title font-bold text-base md:text-lg lg:text-xl pl-2 text-left w-full;
   }
@@ -712,17 +712,17 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply w-8/12 h-auto;
   }
   & button {
-    @apply text-magenta text-sm lg:text-xl  pointer-events-auto mt-auto hover:font-bold;
+    @apply text-magenta text-sm lg:text-xl pointer-events-auto mt-auto hover:font-bold;
   }
 }
 .sectionPrice {
-  @apply w-full gap-2 justify-evenly flex flex-row;
+  @apply w-full gap-2 flex flex-row items-start justify-start ml-2;
   & div {
     @apply flex flex-row  gap-2 bg-mint p-2;
     & span {
       @apply text-sm md:text-xs font-cta text-text-primary;
     }
-    & h1 {
+    & h2 {
       @apply text-cream font-bold font-subtitle text-base md:text-lg lg:text-xl;
     }
   }
@@ -754,6 +754,121 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
           }
         }
       }
+    }
+  }
+}
+.price {
+  @apply w-full h-full flex  flex-col m-0 p-0;
+}
+.priceHeader {
+  @apply flex flex-col items-center justify-center w-full;
+  & h1 {
+    @apply font-body text-text-strong text-base md:text-lg lg:text-2xl font-normal py-4 text-center;
+    & span {
+      @apply font-bold;
+    }
+  }
+  & p {
+    @apply font-body text-text-primary text-xs lg:text-base mt-4 pb-8;
+    & span {
+      @apply font-body text-title;
+    }
+  }
+}
+/*ESTILOS MODAL PRECIOS */
+.borderPriceModal {
+  @apply absolute inset-0  pointer-events-none rounded-2xl w-full md:w-11/12 max-h-screen md:max-h-[calc(100vh-18rem)] lg:max-h-screen m-auto  flex items-center justify-center;
+  background-image: var(--bg-dots-card);
+  background-size: var(--bg-dots-size);
+}
+.priceModal {
+  @apply w-10/12 md:w-11/12 h-11/12 bg-cream flex flex-col items-center my-auto rounded-2xl p-1 md:p-4;
+  & header {
+    @apply w-full flex flex-col;
+    & button {
+      @apply absolute top-14 lg:top-12 right-14 lg:right-20 transition-colors duration-200 pointer-events-auto;
+      & img {
+        @apply w-4 md:w-5 h-auto;
+      }
+    }
+    & h1 {
+      @apply font-subtitle text-title font-bold text-base md:text-lg lg:text-2xl pl-6 text-left w-full;
+    }
+    & p {
+      @apply w-full pt-0 text-xs lg:text-base font-cta text-text-primary my-0;
+    }
+  }
+}
+.priceModalBody {
+  @apply w-full grid grid-cols-1 lg:grid-cols-3 gap-2.5 lg:gap-10 pt-0 mt-0;
+  & div {
+    @apply col-span-1;
+    & img {
+      @apply max-w-1/2 lg:max-w-full;
+    }
+  }
+  & section {
+    @apply col-span-1 lg:col-span-2;
+  }
+}
+.priceModalContent {
+  @apply w-full flex flex-col;
+  & section {
+    @apply w-full flex flex-row items-center gap-0.5 lg:gap-2;
+    & img {
+      @apply w-4 md:w-6 lg:w-8 h-auto;
+    }
+    & p {
+      @apply flex flex-wrap text-[0.6rem] md:text-xs lg:text-sm font-cta text-text-primary;
+    }
+  }
+}
+
+.informationContent {
+  @apply w-full flex flex-col lg:flex-row items-center justify-between my-0;
+  & section {
+    @apply w-full lg:w-fit pl-2 lg:pl-3;
+    & img {
+      @apply hidden md:block;
+    }
+    & div {
+      @apply flex flex-col gap-2;
+      & ul {
+        @apply list-inside max-h-36 md:max-h-48 lg:max-h-56 overflow-y-auto pointer-events-auto;
+        & li {
+          @apply text-[0.6rem] md:text-xs lg:text-sm;
+        }
+      }
+    }
+  }
+}
+.timeContent {
+  @apply mt-2 md:mt-4 items-start;
+  & section {
+    @apply w-full ml-2 lg:ml-4 flex flex-col md:flex-row items-start text-start;
+    & div {
+      @apply flex flex-col gap-0 ml-4;
+      & h6 {
+        @apply font-bold text-text-strong text-xs md:text-sm lg:text-base;
+      }
+      & span {
+        @apply text-[0.5rem] md:text-xs text-title;
+      }
+    }
+    & p {
+      @apply text-[0.5rem] md:text-xs text-title;
+    }
+  }
+}
+.priceModalCTA {
+  @apply w-full flex flex-col items-center justify-center mt-auto gap-2;
+  & div {
+    @apply w-full gap-0 text-center;
+    & h4 {
+      @apply text-magenta text-sm md:text-lg font-button;
+    }
+    & span {
+      @apply text-[0.5rem] md:text-xs leading-tight;
     }
   }
 }

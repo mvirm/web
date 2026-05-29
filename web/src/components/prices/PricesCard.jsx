@@ -12,7 +12,27 @@ const PricesCard = ({
   time,
   details,
   useCase,
+  setShowPriceModal,
+  setSelectedData,
+  selectedData,
 }) => {
+  const openModalHandler = () => {
+    console.log("hago click en + info");
+    setSelectedData({
+      id,
+      title,
+      prices,
+      description,
+      image,
+      includes,
+      time,
+      details,
+      useCase,
+    });
+    console.log(selectedData);
+
+    setShowPriceModal(true);
+  };
   return (
     <div className="priceCardContainer">
       <div className="priceCard">
@@ -20,7 +40,7 @@ const PricesCard = ({
         <section className="sectionPrice ">
           <div>
             <span> desde</span>
-            <h1>{prices.ars ? `ARS ${prices.ars}` : "Consultar"}</h1>
+            <h2>{prices.ars ? `ARS ${prices.ars}` : "Consultar"}</h2>
           </div>
           <h6>{prices.usd ? `usd ${prices.usd}` : ""}</h6>
         </section>
@@ -43,29 +63,9 @@ const PricesCard = ({
             </div>
           </section>
         </section>
-        <button>+ INFO</button>
+        <button onClick={openModalHandler}>+ INFO</button>
       </div>
     </div>
   );
 };
 export default PricesCard;
-
-{
-  /* <section>
-  <img src={timeIcon} alt="Tiempo" className="w-8" />
-  <div className="flex flex-col gap-2">
-    <span> TIEMPO ESTIMADO</span>
-    {time ? (
-      <div className="flex flex-col gap-2">
-        <span>{`${time} semanas`}</span>
-        <span>Sujeto a la complejidad y alcance del proyecto</span>
-      </div>
-    ) : (
-      <p>
-        A definir luego de analizar necesidades, funcionalidades y
-        objetivos.
-      </p>
-    )}
-  </div>
-</section> */
-}

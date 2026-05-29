@@ -1,16 +1,15 @@
-import { useState, useEffect } from "react";
-import fetchData from "../utils/fetchData";
 import Card from "./PricesCard";
 import Spinner from "../utils/Spinner";
 
-const PricesCardContainer = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-  //traigo los datos del json
-  useEffect(() => {
-    fetchData({ setData, fileName: "prices", setLoading });
-  }, []);
-
+const PricesCardContainer = ({
+  data,
+  setData,
+  loading,
+  setLoading,
+  setShowPriceModal,
+  setSelectedData,
+  selectedData,
+}) => {
   return (
     <div className="services-benefits-cards-container">
       {loading ? (
@@ -30,6 +29,9 @@ const PricesCardContainer = () => {
             time={price.time}
             details={price.details}
             useCase={price.useCases}
+            setShowPriceModal={setShowPriceModal}
+            setSelectedData={setSelectedData}
+            selectedData={selectedData}
           />
         ))
       )}

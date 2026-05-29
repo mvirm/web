@@ -6,7 +6,7 @@ const PhilosophyAndFinallyCta = ({ setShowModal }) => {
   return (
     <div className=" bg-linen">
       <Philosophy />
-      <FinallyCta />
+      <FinallyCta setShowModal={setShowModal} />
       <div className="sectionFinallyCta">
         <CTASection
           text={
