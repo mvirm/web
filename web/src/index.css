@@ -14,7 +14,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   --color-stone: #b2ad99;
   --color-ink: #4a483f;
   --color-yellow: #ffde00;
-  --color-orange: #ff8c00;
+  --color-orange: #ef6c00;
   --color-orange-dark: #e86a00;
   --color-magenta: #ff007a;
   --color-magenta-dark: #c50085;
@@ -213,7 +213,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
       @apply block lg:hidden;
     }
     & span {
-      @apply text-orange;
+      @apply text-title md:text-title-desktop;
     }
   }
 }
