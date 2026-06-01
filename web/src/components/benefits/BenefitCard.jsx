@@ -7,7 +7,7 @@ const BenefitCard = ({ id, title, anchor, description, image, highlight }) => {
         {/* TITULO */}
         <section className="benefitCardHeader">
           <h3>{title}</h3>
-          <h5>{anchor}</h5>
+          <h4>{anchor}</h4>
         </section>
         {/* CONTENIDO CENTRAL */}
         <section className="benefitCardContent">

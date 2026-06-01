@@ -35,11 +35,11 @@ const PriceModal = ({ setShowPriceModal, selectedData, setShowModal }) => {
                     : "Consultar"}
                 </h2>
               </div>
-              <h6>
+              <h3>
                 {selectedData.prices.usd
                   ? `usd ${selectedData.prices.usd}`
                   : ""}
-              </h6>
+              </h3>
             </section>
             <p>{selectedData.description}</p>
           </header>

@@ -10,16 +10,16 @@ const HeroText = ({ setShowModal }) => {
         donde lo técnico y lo visual trabajan juntos para que tu proyecto
         funcione de verdad
       </p>
-      <h4>
+      <h3>
         ¿Tenés un proyecto en mente?
         <br /> Te ayudo a llevarlo a la realidad digital.
-      </h4>
+      </h3>
       <ButtonCTA setShowModal={setShowModal} />
-      <h5>
+      <h4>
         ¿Tenés una web que no funciona como esperabas?
         <br />
         <span> Te ayudo a llevarla a su mejor versión</span>
-      </h5>
+      </h4>
     </div>
   );
 };

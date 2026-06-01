@@ -42,7 +42,7 @@ const PricesCard = ({
             <span> desde</span>
             <h2>{prices.ars ? `ARS ${prices.ars}` : "Consultar"}</h2>
           </div>
-          <h6>{prices.usd ? `usd ${prices.usd}` : "-"}</h6>
+          <h3>{prices.usd ? `usd ${prices.usd}` : "-"}</h3>
         </section>
         <p>{description}</p>
         <img src={image} alt={title} />

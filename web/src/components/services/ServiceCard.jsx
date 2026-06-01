@@ -12,12 +12,12 @@ const ServiceCard = ({
     <div className="serviceCardContainer">
       <div className="serviceCard">
         {/* TITULO */}
-        <h3>{ParseLigthText(title)}</h3>
+        <h4>{ParseLigthText(title)}</h4>
         {/* CONTENIDO CENTRAL */}
         <div className="serviceCardContent">
           <section className="serviceCardHeader">
             {/* PREGUNTA -solo visible en lg */}
-            <h6>{ParseStrongText(question)}</h6>
+            <h5>{ParseStrongText(question)}</h5>
             {/* IMAGEN */}
             <div>
               <img src={image} alt="icono" loading="lazy" />

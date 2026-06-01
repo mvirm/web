@@ -9,7 +9,7 @@ const CardProcess = ({ id, title, subtitle, background, description }) => {
       <div className="processContent">
         <section className="processCardHead">
           <h2>{title}</h2>
-          <h4>{subtitle}</h4>
+          <h3>{subtitle}</h3>
         </section>
         <section className="processCardBody">
           <p>{ParseStrongText(description)}</p>

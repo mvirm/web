@@ -17,7 +17,7 @@ const ProjectCard = ({
       </picture>
       <div className="projectCardContent">
         <section className="projectCardHead">
-          <h2>{title}</h2>
+          <h3>{title}</h3>
           <h4>{subtitle}</h4>
         </section>
         <div className="projectCardBody">
@@ -35,7 +35,7 @@ const ProjectCard = ({
             {details?.map((detail, index) => (
               <div key={index} className="detailContent">
                 <div>
-                  <h6>{ParseStrongTitle(detail.title)}</h6>
+                  <h5>{ParseStrongTitle(detail.title)}</h5>
                 </div>
                 <p>{ParseStrongText(detail.description)}</p>
               </div>

@@ -17,11 +17,11 @@ const PhilosophyFinallyCard = () => {
           El resultado no es solo algo que se ve bien, sino algo que funciona,
           escala y tiene sentido.
         </p>
-        <h6>
+        <h1>
           <span>Programar</span> es mi forma de <span>resolver problemas</span>;{" "}
           <span>diseñar</span> es mi forma de hacer que esas{" "}
           <span>soluciones</span> sean <span>memorables</span>.
-        </h6>
+        </h1>
       </div>
     </div>
   );
