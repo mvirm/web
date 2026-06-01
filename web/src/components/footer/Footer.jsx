@@ -25,7 +25,7 @@ const Footer = ({ setShowModal }) => {
           </div>
           <div onClick={() => setShowModal(true)} style={{ cursor: "pointer" }}>
             <img src={email} alt="email" />
-            <h6>CONTACTO</h6>
+            <h3>CONTACTO</h3>
           </div>
         </section>
         <p>

@@ -2,7 +2,7 @@ const CarouselDots = ({ data, current, setCurrent, setTransitionEnabled }) => {
   return (
     <div className="carouselDots">
       {data.map((_, index) => (
-        <div
+        <button
           key={index}
           className={`carouselDot ${current === index + 1 ? "activeDot" : ""}`}
           aria-label={`Ir al slide ${index + 1}`}

@@ -19,7 +19,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   --color-magenta: #ec0373;
   --color-magenta-dark: #da036e;
   --color-purple: #5736d6;
-  --color-mint: #05cbbb;
+  --color-mint: #04a39a;
   /* colores asignados */
   --color-button-bg: var(--color-yellow);
   --color-text-primary: var(--color-ink);
@@ -605,7 +605,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
       & a {
         @apply text-base lg:text-lg font-cta text-text-primary;
       }
-      & h6 {
+      & h3 {
         @apply text-base lg:text-lg font-cta text-text-primary;
       }
     }
@@ -712,7 +712,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply w-full pt-2 text-xs lg:text-sm font-cta text-text-primary;
   }
   & img {
-    @apply w-8/12 h-auto;
+    @apply w-8/12 h-auto mx-auto;
   }
   & button {
     @apply text-magenta-dark md:text-magenta text-sm lg:text-xl pointer-events-auto mt-auto hover:font-bold;
@@ -723,7 +723,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   & div {
     @apply flex flex-row  gap-2 bg-mint p-2;
     & span {
-      @apply text-sm md:text-xs font-cta text-linen font-bold;
+      @apply text-sm md:text-xs font-cta text-cream font-bold;
     }
     & h2 {
       @apply text-cream font-extrabold font-subtitle text-base md:text-lg lg:text-xl;
