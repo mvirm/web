@@ -14,15 +14,18 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   --color-stone: #b2ad99;
   --color-ink: #4a483f;
   --color-yellow: #ffde00;
-  --color-orange: #ef6c00;
+  --color-orange: #ff8c00;
+  --color-orange-dark: #e86a00;
   --color-magenta: #ff007a;
+  --color-magenta-dark: #c50085;
   --color-purple: #5736d6;
   --color-mint: #00a88f;
   /* colores asignados */
   --color-button-bg: var(--color-yellow);
   --color-text-primary: var(--color-ink);
   --color-text-strong: var(--color-purple);
-  --color-title: var(--color-orange);
+  --color-title: var(--color-orange-dark);
+  --color-title-desktop: var(--color-orange);
   --color-subtitle: var(--color-mint);
   /* Font families */
   --font-hero-title: "Montserrat", sans-serif;
@@ -123,7 +126,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     }
   }
   & span {
-    @apply text-xs lg:text-base text-title font-cta;
+    @apply text-xs lg:text-base text-title md:text-title-desktop font-cta;
   }
 }
 
@@ -154,7 +157,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .progressBar {
   @apply h-2 md:h-2.5 lg:h-3 rounded-full overflow-hidden bg-cream;
   & div {
-    @apply h-full rounded-full bg-title transition-all duration-75;
+    @apply h-full rounded-full bg-title-desktop transition-all duration-75;
   }
 }
 /*ESTILOS BACKGROUND HERO Y PROYECTOS*/
@@ -304,7 +307,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .serviceCard {
   @apply bg-cream rounded-2xl w-11/12 h-11/12 md:w-10/12  flex flex-col p-2 lg:p-4;
   & h3 {
-    @apply font-subtitle text-title font-bold text-base md:text-lg lg:text-xl;
+    @apply font-subtitle text-title md:text-title-desktop font-bold text-base md:text-lg lg:text-xl;
   }
 }
 .serviceCardContent {
@@ -334,7 +337,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .serviceCardHighlights {
   @apply flex flex-col -mt-2.5 md:mt-auto;
   & span {
-    @apply font-button text-sm lg:text-base text-magenta font-semibold;
+    @apply font-button text-sm lg:text-base text-magenta-dark md:text-magenta font-semibold;
   }
 }
 /*ESTILOS CARD BENEFICIOS*/
@@ -353,7 +356,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .benefitCardHeader {
   @apply flex flex-col w-full;
   & h3 {
-    @apply font-subtitle text-title font-bold text-lg lg:text-xl w-full text-left;
+    @apply font-subtitle text-title md:text-title-desktop font-bold text-lg lg:text-xl w-full text-left;
   }
   & h5 {
     @apply text-sm lg:text-base font-cta text-subtitle w-full text-left;
@@ -369,7 +372,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   }
 }
 .benefitCardHighlight {
-  @apply w-full mt-auto font-button text-sm lg:text-base text-magenta font-semibold;
+  @apply w-full mt-auto font-button text-sm lg:text-base text-magenta-dark md:text-magenta font-semibold;
 }
 /*CTA SERVICIOS Y BENEFICIOS*/
 .service-benefits-ctaContainer {
@@ -423,7 +426,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .projectCardHead {
   @apply gap-4 my-4 md:-mt-7 lg:-mt-10 md:pl-[54%] lg:pl-[57%];
   & h2 {
-    @apply text-title font-bold font-subtitle text-xl lg:text-4xl;
+    @apply text-title md:text-title-desktop font-bold font-subtitle text-xl lg:text-4xl;
   }
   & h4 {
     @apply text-subtitle text-sm lg:text-lg font-cta;
@@ -458,7 +461,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .projectCard-sectionHighlights {
   @apply w-full items-end flex flex-col mt-2;
   & span {
-    @apply font-button text-sm lg:text-xl text-magenta font-semibold;
+    @apply font-button text-sm lg:text-xl text-magenta-dark md:text-magenta font-semibold;
   }
 }
 
@@ -576,7 +579,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply text-center;
   }
   & p {
-    @apply text-xs lg:text-sm text-title text-center;
+    @apply text-xs lg:text-sm text-title md:text-title-desktop text-center;
   }
 }
 
@@ -649,7 +652,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   & span {
     @apply text-xs md:text-base lg:text-lg font-cta text-text-primary w-full text-center mb-10 md:mb-8 lg:mb-4;
     & a {
-      @apply text-orange pointer-events-auto hover:text-magenta transition-colors duration-200;
+      @apply text-orange pointer-events-auto hover:text-magenta-dark md:text-magenta transition-colors duration-200;
     }
   }
 }
@@ -679,7 +682,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .alert {
   @apply w-11/12 md:w-full flex flex-col items-center bg-center justify-center gap-4;
   & h2 {
-    @apply text-title font-bold font-subtitle text-2xl;
+    @apply text-title md:text-title-desktop font-bold font-subtitle text-2xl;
   }
   & img {
     @apply w-50 h-auto;
@@ -703,7 +706,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 .priceCard {
   @apply bg-cream rounded-2xl w-11/12 h-11/12  items-stretch flex flex-col px-2 py-4;
   & h1 {
-    @apply font-subtitle text-title font-bold text-base md:text-lg lg:text-xl pl-2 text-left w-full;
+    @apply font-subtitle text-title md:text-title-desktop font-bold text-base md:text-lg lg:text-xl pl-2 text-left w-full;
   }
   & p {
     @apply w-full pt-2 text-xs lg:text-sm font-cta text-text-primary;
@@ -712,7 +715,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
     @apply w-8/12 h-auto;
   }
   & button {
-    @apply text-magenta text-sm lg:text-xl pointer-events-auto mt-auto hover:font-bold;
+    @apply text-magenta-dark md:text-magenta text-sm lg:text-xl pointer-events-auto mt-auto hover:font-bold;
   }
 }
 .sectionPrice {
@@ -720,10 +723,10 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   & div {
     @apply flex flex-row  gap-2 bg-mint p-2;
     & span {
-      @apply text-sm md:text-xs font-cta text-text-primary;
+      @apply text-sm md:text-xs font-cta text-linen font-bold;
     }
     & h2 {
-      @apply text-cream font-bold font-subtitle text-base md:text-lg lg:text-xl;
+      @apply text-cream font-extrabold font-subtitle text-base md:text-lg lg:text-xl;
     }
   }
   & h6 {
@@ -771,7 +774,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   & p {
     @apply font-body text-text-primary text-xs lg:text-base mt-4 pb-8;
     & span {
-      @apply font-body text-title;
+      @apply font-body text-title md:text-title-desktop;
     }
   }
 }
@@ -792,7 +795,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
       }
     }
     & h1 {
-      @apply font-subtitle text-title font-bold text-base md:text-lg lg:text-2xl pl-6 text-left w-full;
+      @apply font-subtitle text-title md:text-title-desktop font-bold text-base md:text-lg lg:text-2xl pl-6 text-left w-full;
     }
     & p {
       @apply w-full pt-0 text-xs lg:text-base font-cta text-text-primary my-0;
@@ -852,11 +855,11 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
         @apply font-bold text-text-strong text-xs md:text-sm lg:text-base;
       }
       & span {
-        @apply text-[0.5rem] md:text-xs text-title;
+        @apply text-[0.5rem] md:text-xs text-title md:text-title-desktop;
       }
     }
     & p {
-      @apply text-[0.5rem] md:text-xs text-title;
+      @apply text-[0.5rem] md:text-xs text-title md:text-title-desktop;
     }
   }
 }
@@ -865,7 +868,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   & div {
     @apply w-full gap-0 text-center;
     & h4 {
-      @apply text-magenta text-sm md:text-lg font-button;
+      @apply text-magenta-dark md:text-magenta text-sm md:text-lg font-button;
     }
     & span {
       @apply text-[0.5rem] md:text-xs leading-tight;

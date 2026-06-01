@@ -12,7 +12,7 @@ const ParseStrongText = (text) => {
     // texto entre -
     if (part.startsWith("-") && part.endsWith("-")) {
       return (
-        <span key={index} className="text-title">
+        <span key={index} className="text-title md:text-title-desktop">
           {part.slice(1, -1)}
         </span>
       );

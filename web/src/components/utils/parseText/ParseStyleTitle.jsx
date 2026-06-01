@@ -17,7 +17,7 @@ const ParseStyledTitle = (title) => {
       return (
         <span
           key={index}
-          className="text-magenta font-bold text-xl lg:text-2xl"
+          className="text-magenta-dark md:text-magenta font-bold text-xl lg:text-2xl"
         >
           {part.slice(1, -1)}
         </span>
