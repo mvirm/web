@@ -8,7 +8,7 @@ import icon from "../../assets/icons/icon.svg";
 const Hero = ({ setShowModal }) => {
   return (
     <div className="hero-project-container heroPictureLayout">
-      <picture fetchpriority="high">
+      <picture>
         <source media="(min-width: 768px)" srcSet={bgTD} />
         <img src={bgMobile} alt="background hero" />
       </picture>
