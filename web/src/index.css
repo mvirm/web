@@ -14,10 +14,10 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
   --color-stone: #b2ad99;
   --color-ink: #4a483f;
   --color-yellow: #ffde00;
-  --color-orange: #ff8c00;
+  --color-orange: #fa8000;
   --color-magenta: #ff007a;
-  --color-purple: #7a5fff;
-  --color-mint: #55e6c1;
+  --color-purple: #5736d6;
+  --color-mint: #00a88f;
   /* colores asignados */
   --color-button-bg: var(--color-yellow);
   --color-text-primary: var(--color-ink);
@@ -469,7 +469,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 }
 /*card procesos*/
 .process {
-  @apply bg-cream rounded-2xl w-full relative overflow-hidden min-h-28 lg:min-h-34;
+  @apply bg-cream rounded-2xl w-full relative overflow-hidden min-h-28 lg:min-h-38;
   & picture {
     @apply absolute left-0 -top-1 h-full pointer-events-none;
     & img {

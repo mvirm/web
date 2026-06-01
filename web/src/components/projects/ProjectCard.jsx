@@ -23,7 +23,12 @@ const ProjectCard = ({
         <div className="projectCardBody">
           <section className="projectCard-sectionImages">
             {images?.map((img, index) => (
-              <img key={index} src={img} loading="lazy" />
+              <img
+                key={index}
+                src={img}
+                loading="lazy"
+                alt={`${title} - ${index}`}
+              />
             ))}
           </section>
           <section className="projectCard-sectionDetails">

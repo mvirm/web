@@ -3,10 +3,7 @@ const ParseLigthText = (text) => {
     // si el fragmento está entre ()
     if (part.startsWith("(") && part.endsWith(")")) {
       return (
-        <span
-          key={index}
-          className="font-extralight text-ink text-sm lg:text-base"
-        >
+        <span key={index} className=" text-ink text-sm lg:text-base">
           {part.slice(1, -1)}
         </span>
       );
