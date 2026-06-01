@@ -132,7 +132,7 @@ Ahora su archivo CSS está asociado con Tailwind CSS en lugar de CSS normal y la
 
 /*ESTILOS LOADING INICIAL*/
 .initialLoading {
-  @apply fixed inset-0 flex flex-col items-center justify-center bg-parchment overflow-hidden;
+  @apply fixed inset-0 flex flex-col items-center justify-center bg-parchment overflow-hidden z-50;
   & {
     picture {
       @apply absolute inset-0;
